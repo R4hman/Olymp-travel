@@ -1,0 +1,1001 @@
+{
+  "hotels": [
+    {
+      "id": 898,
+      "hotelsName": "CVK Park Bosphorus Hotel Istanbul",
+      "price": 1000,
+      "date": "09-09-2023",
+      "rating": 4.6,
+      "position": { "lat": 41.015137, "lng": 28.97953 },
+      "isInFavorite": false,
+
+      "overview": " Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit nobis cum esse vero eveniet quisquam ratione temporibus cumque praesentium similique distinctio recusandae quas quod, rerum ab asperiores possimus iste assumenda!",
+
+      "pictureURL": [
+        "https://i.imgur.com/1Nvq8gs.png",
+        "https://picsum.photos/id/247/300/300",
+        "https://picsum.photos/id/32/300/300",
+        "https://picsum.photos/id/126/300/300",
+        "https://picsum.photos/id/297/300/300",
+        "https://picsum.photos/id/567/300/300",
+        "https://picsum.photos/id/133/300/300",
+        "https://picsum.photos/id/412/300/300",
+        "https://picsum.photos/id/135/300/300"
+      ],
+      "fitness": true,
+      "pool": true,
+      "aircondition": true,
+      "freecoencillation": true,
+
+      "reviews": [
+        {
+          "src": "https://i.pravatar.cc/126          ",
+          "name": "John",
+          "text": "It was such a good city to visit. I enjoyed it"
+        },
+        {
+          "src": "https://i.pravatar.cc/244",
+          "name": "Peter",
+          "text": "It was such a good city to visit. I enjoyed it"
+        },
+        {
+          "src": "https://i.pravatar.cc/300",
+          "name": "Ksenia ",
+          "text": "It was such a good city to visit. I enjoyed it"
+        }
+      ]
+    },
+    {
+      "id": 9551,
+      "hotelsName": "Baku",
+      "price": 1000,
+      "date": "09-09-2023",
+      "rating": 4.6,
+      "position": { "lat": 40.409264, "lng": 49.867092 },
+      "isInFavorite": false,
+
+      "overview": " Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit nobis cum esse vero eveniet quisquam ratione temporibus cumque praesentium similique distinctio recusandae quas quod, rerum ab asperiores possimus iste assumenda!",
+
+      "pictureURL": [
+        "https://i.imgur.com/1Nvq8gs.png",
+        "https://picsum.photos/id/247/300/300",
+        "https://picsum.photos/id/32/300/300",
+        "https://picsum.photos/id/126/300/300",
+        "https://picsum.photos/id/297/300/300",
+        "https://picsum.photos/id/567/300/300",
+        "https://picsum.photos/id/133/300/300",
+        "https://picsum.photos/id/412/300/300",
+        "https://picsum.photos/id/135/300/300"
+      ],
+      "fitness": true,
+      "pool": true,
+      "aircondition": true,
+      "freecoencillation": true,
+
+      "reviews": [
+        {
+          "src": "https://i.pravatar.cc/126          ",
+          "name": "John",
+          "text": "It was such a good city to visit. I enjoyed it"
+        },
+        {
+          "src": "https://i.pravatar.cc/244",
+          "name": "Peter",
+          "text": "It was such a good city to visit. I enjoyed it"
+        },
+        {
+          "src": "https://i.pravatar.cc/300",
+          "name": "Ksenia ",
+          "text": "It was such a good city to visit. I enjoyed it"
+        }
+      ]
+    },
+    {
+      "id": 125,
+      "hotelsName": "Lankaran",
+      "price": 3000,
+      "date": "17-09-2023",
+      "rating": 4.6,
+      "position": { "lat": 38.75428, "lng": 48.85062 },
+      "isInFavorite": false,
+
+      "overview": " Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit nobis cum esse vero eveniet quisquam ratione temporibus cumque praesentium similique distinctio recusandae quas quod, rerum ab asperiores possimus iste assumenda!",
+
+      "pictureURL": [
+        "https://i.imgur.com/1Nvq8gs.png",
+        "https://picsum.photos/id/247/300/300",
+        "https://picsum.photos/id/32/300/300",
+        "https://picsum.photos/id/126/300/300",
+        "https://picsum.photos/id/297/300/300",
+        "https://picsum.photos/id/567/300/300",
+        "https://picsum.photos/id/133/300/300",
+        "https://picsum.photos/id/412/300/300",
+        "https://picsum.photos/id/135/300/300"
+      ],
+      "fitness": true,
+      "internet": true,
+      "pool": true,
+      "aircondition": true,
+
+      "reviews": [
+        {
+          "src": "https://i.pravatar.cc/126          ",
+          "name": "John",
+          "text": "It was such a good city to visit. I enjoyed it"
+        },
+        {
+          "src": "https://i.pravatar.cc/244",
+          "name": "Peter",
+          "text": "It was such a good city to visit. I enjoyed it"
+        },
+        {
+          "src": "https://i.pravatar.cc/300",
+          "name": "Ksenia ",
+          "text": "It was such a good city to visit. I enjoyed it"
+        },
+        {
+          "src": "https://i.pravatar.cc/300",
+          "name": "Ksenia ",
+          "text": "It was such a good city to visit. I enjoyed it"
+        },
+        {
+          "src": "https://i.pravatar.cc/300",
+          "name": "Ksenia ",
+          "text": "It was such a good city to visit. I enjoyed it"
+        }
+      ]
+    },
+    {
+      "id": 127,
+      "hotelsName": "Yashma",
+      "price": 3000,
+      "date": "17-09-2023",
+      "rating": 4.6,
+      "position": { "lat": 38.75428, "lng": 48.85062 },
+      "isInFavorite": false,
+
+      "overview": " Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit nobis cum esse vero eveniet quisquam ratione temporibus cumque praesentium similique distinctio recusandae quas quod, rerum ab asperiores possimus iste assumenda!",
+
+      "pictureURL": [
+        "https://i.imgur.com/1Nvq8gs.png",
+        "https://picsum.photos/id/247/300/300",
+        "https://picsum.photos/id/32/300/300",
+        "https://picsum.photos/id/126/300/300",
+        "https://picsum.photos/id/297/300/300",
+        "https://picsum.photos/id/567/300/300",
+        "https://picsum.photos/id/133/300/300",
+        "https://picsum.photos/id/412/300/300",
+        "https://picsum.photos/id/135/300/300"
+      ],
+      "fitness": true,
+      "internet": true,
+      "pool": true,
+      "aircondition": true,
+
+      "reviews": [
+        {
+          "src": "https://i.pravatar.cc/126          ",
+          "name": "John",
+          "text": "It was such a good city to visit. I enjoyed it"
+        },
+        {
+          "src": "https://i.pravatar.cc/244",
+          "name": "Peter",
+          "text": "It was such a good city to visit. I enjoyed it"
+        },
+        {
+          "src": "https://i.pravatar.cc/300",
+          "name": "Ksenia ",
+          "text": "It was such a good city to visit. I enjoyed it"
+        },
+        {
+          "src": "https://i.pravatar.cc/300",
+          "name": "Ksenia ",
+          "text": "It was such a good city to visit. I enjoyed it"
+        },
+        {
+          "src": "https://i.pravatar.cc/300",
+          "name": "Ksenia ",
+          "text": "It was such a good city to visit. I enjoyed it"
+        }
+      ]
+    },
+    {
+      "id": 121,
+      "hotelsName": "Lankaran",
+      "position": { "lat": 38.75428, "lng": 48.85062 },
+      "isInFavorite": false,
+
+      "price": 3000,
+      "date": "17-09-2023",
+      "rating": 1.6,
+      "overview": " Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit nobis cum esse vero eveniet quisquam ratione temporibus cumque praesentium similique distinctio recusandae quas quod, rerum ab asperiores possimus iste assumenda!",
+
+      "pictureURL": [
+        "https://i.imgur.com/1Nvq8gs.png",
+        "https://picsum.photos/id/247/300/300",
+        "https://picsum.photos/id/32/300/300",
+        "https://picsum.photos/id/126/300/300",
+        "https://picsum.photos/id/297/300/300",
+        "https://picsum.photos/id/567/300/300",
+        "https://picsum.photos/id/133/300/300",
+        "https://picsum.photos/id/412/300/300",
+        "https://picsum.photos/id/135/300/300"
+      ],
+      "fitness": true,
+      "internet": true,
+      "pool": true,
+      "aircondition": true,
+
+      "reviews": [
+        {
+          "src": "https://i.pravatar.cc/126          ",
+          "name": "John",
+          "text": "It was such a good city to visit. I enjoyed it"
+        },
+        {
+          "src": "https://i.pravatar.cc/244",
+          "name": "Peter",
+          "text": "It was such a good city to visit. I enjoyed it"
+        },
+        {
+          "src": "https://i.pravatar.cc/300",
+          "name": "Ksenia ",
+          "text": "It was such a good city to visit. I enjoyed it"
+        }
+      ]
+    },
+    {
+      "id": 139,
+      "hotelsName": "Lankaran",
+      "price": 1000,
+      "date": "17-09-2023",
+      "rating": 3.6,
+      "position": { "lat": 38.75428, "lng": 48.85062 },
+      "isInFavorite": false,
+
+      "overview": " Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit nobis cum esse vero eveniet quisquam ratione temporibus cumque praesentium similique distinctio recusandae quas quod, rerum ab asperiores possimus iste assumenda!",
+
+      "pictureURL": [
+        "https://i.imgur.com/1Nvq8gs.png",
+        "https://picsum.photos/id/247/300/300",
+        "https://picsum.photos/id/32/300/300",
+        "https://picsum.photos/id/126/300/300",
+        "https://picsum.photos/id/297/300/300",
+        "https://picsum.photos/id/567/300/300",
+        "https://picsum.photos/id/133/300/300",
+        "https://picsum.photos/id/412/300/300",
+        "https://picsum.photos/id/135/300/300"
+      ],
+      "fitness": true,
+      "pool": true,
+      "aircondition": true,
+
+      "reviews": [
+        {
+          "src": "https://i.pravatar.cc/126          ",
+          "name": "John",
+          "text": "It was such a good city to visit. I enjoyed it"
+        },
+        {
+          "src": "https://i.pravatar.cc/244",
+          "name": "Peter",
+          "text": "It was such a good city to visit. I enjoyed it"
+        },
+        {
+          "src": "https://i.pravatar.cc/300",
+          "name": "Ksenia ",
+          "text": "It was such a good city to visit. I enjoyed it"
+        }
+      ]
+    },
+    {
+      "id": 452,
+      "hotelsName": "Lankaran",
+      "price": 500,
+      "date": "17-09-2023",
+      "position": { "lat": 38.75428, "lng": 48.85062 },
+      "isInFavorite": false,
+
+      "rating": 2.6,
+      "overview": " Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit nobis cum esse vero eveniet quisquam ratione temporibus cumque praesentium similique distinctio recusandae quas quod, rerum ab asperiores possimus iste assumenda!",
+
+      "pictureURL": [
+        "https://i.imgur.com/1Nvq8gs.png",
+        "https://picsum.photos/id/247/300/300",
+        "https://picsum.photos/id/32/300/300",
+        "https://picsum.photos/id/126/300/300",
+        "https://picsum.photos/id/297/300/300",
+        "https://picsum.photos/id/567/300/300",
+        "https://picsum.photos/id/133/300/300",
+        "https://picsum.photos/id/412/300/300",
+        "https://picsum.photos/id/135/300/300"
+      ],
+      "fitness": true,
+      "pool": true,
+      "aircondition": true,
+
+      "reviews": [
+        {
+          "src": "https://i.pravatar.cc/126          ",
+          "name": "John",
+          "text": "It was such a good city to visit. I enjoyed it"
+        },
+        {
+          "src": "https://i.pravatar.cc/244",
+          "name": "Peter",
+          "text": "It was such a good city to visit. I enjoyed it"
+        },
+        {
+          "src": "https://i.pravatar.cc/300",
+          "name": "Ksenia ",
+          "text": "It was such a good city to visit. I enjoyed it"
+        }
+      ]
+    },
+    {
+      "id": 489,
+      "hotelsName": "CVK Park Bosphorus Hotel Istanbul",
+      "price": 6000,
+      "date": "09-09-2023",
+      "position": { "lat": 41.015137, "lng": 28.97953 },
+      "isInFavorite": false,
+
+      "rating": 4.4,
+      "overview": " Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit nobis cum esse vero eveniet quisquam ratione temporibus cumque praesentium similique distinctio recusandae quas quod, rerum ab asperiores possimus iste assumenda!",
+
+      "pictureURL": [
+        "https://i.imgur.com/1Nvq8gs.png",
+        "https://picsum.photos/id/247/300/300",
+        "https://picsum.photos/id/32/300/300",
+        "https://picsum.photos/id/126/300/300",
+        "https://picsum.photos/id/297/300/300",
+        "https://picsum.photos/id/567/300/300",
+        "https://picsum.photos/id/133/300/300",
+        "https://picsum.photos/id/412/300/300",
+        "https://picsum.photos/id/135/300/300"
+      ],
+      "fitness": true,
+      "pool": true,
+      "aircondition": true,
+
+      "reviews": [
+        {
+          "name": "John",
+          "text": "It was such a good city to visit. I enjoyed it"
+        },
+        {
+          "name": "Peter",
+          "text": "It was such a good city to visit. I enjoyed it"
+        },
+        {
+          "name": "Ksenia ",
+          "text": "It was such a good city to visit. I enjoyed it"
+        }
+      ]
+    },
+    {
+      "id": 926,
+      "hotelsName": "Eresin Hotels Sultanahmet - Boutique Class",
+      "price": 2000,
+      "overview": " Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit nobis cum esse vero eveniet quisquam ratione temporibus cumque praesentium similique distinctio recusandae quas quod, rerum ab asperiores possimus iste assumenda!",
+
+      "date": "09-09-2023",
+      "rating": 4.8,
+      "position": { "lat": 41.015137, "lng": 28.97953 },
+      "isInFavorite": false,
+
+      "pictureURL": [
+        "https://i.imgur.com/1Nvq8gs.png",
+        "https://picsum.photos/id/247/300/300",
+        "https://picsum.photos/id/32/300/300",
+        "https://picsum.photos/id/126/300/300",
+        "https://picsum.photos/id/297/300/300",
+        "https://picsum.photos/id/567/300/300",
+        "https://picsum.photos/id/133/300/300",
+        "https://picsum.photos/id/412/300/300",
+        "https://picsum.photos/id/135/300/300"
+      ],
+      "freebreakfast": true,
+      "freeparking": true,
+
+      "fitness": true,
+      "pool": true,
+
+      "reviews": [
+        {
+          "name": "Alicia",
+          "text": "It was such a good city to visit. I enjoyed it"
+        },
+        {
+          "name": "Peter",
+          "text": "It was such a good city to visit. I enjoyed it"
+        },
+        {
+          "name": "Ksenia ",
+          "text": "It was such a good city to visit. I enjoyed it"
+        }
+      ]
+    },
+    {
+      "id": 377,
+      "hotelsName": "Eresin Hotels Sultanahmet - Boutique Class",
+      "price": 2000,
+      "overview": " Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit nobis cum esse vero eveniet quisquam ratione temporibus cumque praesentium similique distinctio recusandae quas quod, rerum ab asperiores possimus iste assumenda!",
+
+      "date": "09-09-2023",
+      "rating": 4.8,
+      "position": { "lat": 41.015137, "lng": 28.97953 },
+      "isInFavorite": false,
+
+      "pictureURL": [
+        "https://i.imgur.com/1Nvq8gs.png",
+        "https://picsum.photos/id/247/300/300",
+        "https://picsum.photos/id/32/300/300",
+        "https://picsum.photos/id/126/300/300",
+        "https://picsum.photos/id/297/300/300",
+        "https://picsum.photos/id/567/300/300",
+        "https://picsum.photos/id/133/300/300",
+        "https://picsum.photos/id/412/300/300",
+        "https://picsum.photos/id/135/300/300"
+      ],
+      "aircondition": true,
+      "freeinternet": true,
+      "freeparking": true,
+      "fitness": true,
+      "pool": true,
+
+      "reviews": [
+        {
+          "name": "Alicia",
+          "text": "It was such a good city to visit. I enjoyed it"
+        },
+        {
+          "name": "Peter",
+          "text": "It was such a good city to visit. I enjoyed it"
+        },
+        {
+          "name": "Ksenia ",
+          "text": "It was such a good city to visit. I enjoyed it"
+        }
+      ]
+    },
+    {
+      "id": 278,
+      "hotelsName": "Eresin Hotels Sultanahmet - Boutique Class",
+      "position": { "lat": 41.015137, "lng": 28.97953 },
+      "isInFavorite": false,
+
+      "price": 2000,
+      "overview": " Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit nobis cum esse vero eveniet quisquam ratione temporibus cumque praesentium similique distinctio recusandae quas quod, rerum ab asperiores possimus iste assumenda!",
+
+      "date": "09-09-2023",
+      "rating": 4.8,
+      "pictureURL": [
+        "https://i.imgur.com/1Nvq8gs.png",
+        "https://picsum.photos/id/247/300/300",
+        "https://picsum.photos/id/32/300/300",
+        "https://picsum.photos/id/126/300/300",
+        "https://picsum.photos/id/297/300/300",
+        "https://picsum.photos/id/567/300/300",
+        "https://picsum.photos/id/133/300/300",
+        "https://picsum.photos/id/412/300/300",
+        "https://picsum.photos/id/135/300/300"
+      ],
+      "24hrfrontdesk": true,
+      "freeinternet": true,
+      "freeparking": true,
+      "fitness": true,
+      "pool": true,
+
+      "reviews": [
+        {
+          "name": "Alicia",
+          "text": "It was such a good city to visit. I enjoyed it"
+        },
+        {
+          "name": "Peter",
+          "text": "It was such a good city to visit. I enjoyed it"
+        },
+        {
+          "name": "Ksenia ",
+          "text": "It was such a good city to visit. I enjoyed it"
+        }
+      ]
+    },
+    {
+      "id": 597,
+      "hotelsName": "Eresin Hotels Sultanahmet - Boutique Class",
+      "position": { "lat": 41.015137, "lng": 28.97953 },
+
+      "price": 2000,
+      "date": "17-08-2023",
+      "rating": 3.8,
+      "isInFavorite": false,
+      "overview": " Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit nobis cum esse vero eveniet quisquam ratione temporibus cumque praesentium similique distinctio recusandae quas quod, rerum ab asperiores possimus iste assumenda!",
+
+      "pictureURL": [
+        "https://i.imgur.com/1Nvq8gs.png",
+        "https://picsum.photos/id/247/300/300",
+        "https://picsum.photos/id/32/300/300",
+        "https://picsum.photos/id/126/300/300",
+        "https://picsum.photos/id/297/300/300",
+        "https://picsum.photos/id/567/300/300",
+        "https://picsum.photos/id/133/300/300",
+        "https://picsum.photos/id/412/300/300",
+        "https://picsum.photos/id/135/300/300"
+      ],
+      "freebreakfast": true,
+      "freeparking": true,
+
+      "fitness": true,
+      "pool": true,
+
+      "reviews": [
+        {
+          "name": "Alicia",
+          "text": "It was such a good city to visit. I enjoyed it"
+        },
+        {
+          "name": "Peter",
+          "text": "It was such a good city to visit. I enjoyed it"
+        },
+        {
+          "name": "Ksenia ",
+          "text": "It was such a good city to visit. I enjoyed it"
+        }
+      ]
+    },
+    {
+      "id": 601,
+      "hotelsName": "Eresin Hotels Sultanahmet - Boutique Class",
+      "price": 1500,
+      "date": "22-10-2023",
+      "position": { "lat": 41.015137, "lng": 28.97953 },
+      "isInFavorite": false,
+
+      "rating": 4.7,
+      "overview": " Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit nobis cum esse vero eveniet quisquam ratione temporibus cumque praesentium similique distinctio recusandae quas quod, rerum ab asperiores possimus iste assumenda!",
+
+      "pictureURL": [
+        "https://i.imgur.com/1Nvq8gs.png",
+        "https://picsum.photos/id/247/300/300",
+        "https://picsum.photos/id/32/300/300",
+        "https://picsum.photos/id/126/300/300",
+        "https://picsum.photos/id/297/300/300",
+        "https://picsum.photos/id/567/300/300",
+        "https://picsum.photos/id/133/300/300",
+        "https://picsum.photos/id/412/300/300",
+        "https://picsum.photos/id/135/300/300"
+      ],
+      "freeparking": true,
+      "freeinternet": true,
+      "fitness": true,
+      "pool": true,
+      "aircondition": true,
+
+      "reviews": [
+        {
+          "name": "John",
+          "text": "It was such a good city to visit. I enjoyed it"
+        },
+        {
+          "name": "Peter",
+          "text": "It was such a good city to visit. I enjoyed it"
+        },
+        {
+          "name": "Ksenia ",
+          "text": "It was such a good city to visit. I enjoyed it"
+        }
+      ]
+    },
+    {
+      "id": 849,
+      "overview": " Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit nobis cum esse vero eveniet quisquam ratione temporibus cumque praesentium similique distinctio recusandae quas quod, rerum ab asperiores possimus iste assumenda!",
+
+      "hotelsName": "Eresin Hotels Sultanahmet - Boutique Class",
+      "price": 3000,
+      "date": "22-10-2023",
+      "rating": 3.7,
+      "position": { "lat": 41.015137, "lng": 28.97953 },
+      "isInFavorite": false,
+
+      "pictureURL": [
+        "https://i.imgur.com/1Nvq8gs.png",
+        "https://picsum.photos/id/247/300/300",
+        "https://picsum.photos/id/32/300/300",
+        "https://picsum.photos/id/126/300/300",
+        "https://picsum.photos/id/297/300/300",
+        "https://picsum.photos/id/567/300/300",
+        "https://picsum.photos/id/133/300/300",
+        "https://picsum.photos/id/412/300/300",
+        "https://picsum.photos/id/135/300/300"
+      ],
+      "freeparking": true,
+      "freeinternet": true,
+      "fitness": true,
+      "pool": true,
+      "aircondition": true,
+
+      "reviews": [
+        {
+          "name": "John",
+          "text": "It was such a good city to visit. I enjoyed it"
+        },
+        {
+          "name": "Peter",
+          "text": "It was such a good city to visit. I enjoyed it"
+        },
+        {
+          "name": "Ksenia ",
+          "text": "It was such a good city to visit. I enjoyed it"
+        }
+      ]
+    },
+    {
+      "id": 606,
+      "hotelsName": "Gence",
+      "position": { "lat": 40.68278, "lng": 46.36056 },
+      "isInFavorite": false,
+
+      "price": 3000,
+      "overview": " Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit nobis cum esse vero eveniet quisquam ratione temporibus cumque praesentium similique distinctio recusandae quas quod, rerum ab asperiores possimus iste assumenda!",
+
+      "date": "22-10-2023",
+      "rating": 3.7,
+      "pictureURL": [
+        "https://i.imgur.com/1Nvq8gs.png",
+        "https://picsum.photos/id/247/300/300",
+        "https://picsum.photos/id/32/300/300",
+        "https://picsum.photos/id/126/300/300",
+        "https://picsum.photos/id/297/300/300",
+        "https://picsum.photos/id/567/300/300",
+        "https://picsum.photos/id/133/300/300",
+        "https://picsum.photos/id/412/300/300",
+        "https://picsum.photos/id/135/300/300"
+      ],
+      "freeparking": true,
+      "freeinternet": true,
+      "fitness": true,
+      "pool": true,
+      "aircondition": true,
+      "freeairportshuttle": true,
+
+      "reviews": [
+        {
+          "name": "John",
+          "text": "It was such a good city to visit. I enjoyed it"
+        },
+        {
+          "name": "Peter",
+          "text": "It was such a good city to visit. I enjoyed it"
+        },
+        {
+          "name": "Ksenia ",
+          "text": "It was such a good city to visit. I enjoyed it"
+        }
+      ]
+    },
+    {
+      "id": 788,
+      "overview": " Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit nobis cum esse vero eveniet quisquam ratione temporibus cumque praesentium similique distinctio recusandae quas quod, rerum ab asperiores possimus iste assumenda!",
+
+      "hotelsName": "Gence",
+      "position": { "lat": 40.68278, "lng": 46.36056 },
+      "isInFavorite": false,
+
+      "price": 3000,
+      "date": "22-10-2023",
+      "rating": 3.7,
+      "pictureURL": [
+        "https://i.imgur.com/1Nvq8gs.png",
+        "https://picsum.photos/id/247/300/300",
+        "https://picsum.photos/id/32/300/300",
+        "https://picsum.photos/id/126/300/300",
+        "https://picsum.photos/id/297/300/300",
+        "https://picsum.photos/id/567/300/300",
+        "https://picsum.photos/id/133/300/300",
+        "https://picsum.photos/id/412/300/300",
+        "https://picsum.photos/id/135/300/300"
+      ],
+      "freeparking": true,
+      "freeinternet": true,
+      "fitness": true,
+      "pool": true,
+      "aircondition": true,
+      "freecoencillation": true,
+
+      "reviews": [
+        {
+          "name": "John",
+          "text": "It was such a good city to visit. I enjoyed it"
+        },
+        {
+          "name": "Peter",
+          "text": "It was such a good city to visit. I enjoyed it"
+        },
+        {
+          "name": "Ksenia ",
+          "text": "It was such a good city to visit. I enjoyed it"
+        }
+      ]
+    },
+    {
+      "id": 165,
+      "overview": " Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit nobis cum esse vero eveniet quisquam ratione temporibus cumque praesentium similique distinctio recusandae quas quod, rerum ab asperiores possimus iste assumenda!",
+
+      "hotelsName": "Amsterdam",
+      "position": { "lat": 52.377956, "lng": 4.89707 },
+      "isInFavorite": false,
+
+      "price": 2000,
+      "date": "14-10-2023",
+      "rating": 4.7,
+      "pictureURL": [
+        "https://i.imgur.com/1Nvq8gs.png",
+        "https://picsum.photos/id/247/300/300",
+        "https://picsum.photos/id/32/300/300",
+        "https://picsum.photos/id/126/300/300",
+        "https://picsum.photos/id/297/300/300",
+        "https://picsum.photos/id/567/300/300",
+        "https://picsum.photos/id/133/300/300",
+        "https://picsum.photos/id/412/300/300",
+        "https://picsum.photos/id/135/300/300"
+      ],
+      "breakfast": false,
+      "freeparking": true,
+      "freeinternet": true,
+      "fitness": true,
+      "pool": true,
+      "freecoencillation": true,
+
+      "reviews": [
+        {
+          "name": "John",
+          "text": "It was such a good city to visit. I enjoyed it"
+        },
+        {
+          "name": "Peter",
+          "text": "It was such a good city to visit. I enjoyed it"
+        },
+        {
+          "name": "Ksenia ",
+          "text": "It was such a good city to visit. I enjoyed it"
+        }
+      ]
+    },
+    {
+      "id": 165,
+      "hotelsName": "Amsterdam",
+      "position": { "lat": 52.377956, "lng": 4.89707 },
+      "isInFavorite": false,
+
+      "price": 1000,
+      "overview": " Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit nobis cum esse vero eveniet quisquam ratione temporibus cumque praesentium similique distinctio recusandae quas quod, rerum ab asperiores possimus iste assumenda!",
+
+      "date": "14-10-2023",
+      "rating": 3.7,
+      "pictureURL": [
+        "https://i.imgur.com/1Nvq8gs.png",
+        "https://picsum.photos/id/247/300/300",
+        "https://picsum.photos/id/32/300/300",
+        "https://picsum.photos/id/126/300/300",
+        "https://picsum.photos/id/297/300/300",
+        "https://picsum.photos/id/567/300/300",
+        "https://picsum.photos/id/133/300/300",
+        "https://picsum.photos/id/412/300/300",
+        "https://picsum.photos/id/135/300/300"
+      ],
+      "breakfast": false,
+      "freeparking": true,
+      "freeinternet": true,
+
+      "pool": true,
+
+      "freeairportshuttle": true,
+
+      "reviews": [
+        {
+          "name": "John",
+          "text": "It was such a good city to visit. I enjoyed it"
+        },
+        {
+          "name": "Peter",
+          "text": "It was such a good city to visit. I enjoyed it"
+        },
+        {
+          "name": "Ksenia ",
+          "text": "It was such a good city to visit. I enjoyed it"
+        }
+      ]
+    },
+    {
+      "id": 165,
+      "hotelsName": "Amsterdam",
+      "position": { "lat": 52.377956, "lng": 4.89707 },
+      "isInFavorite": false,
+
+      "price": 3000,
+      "overview": " Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit nobis cum esse vero eveniet quisquam ratione temporibus cumque praesentium similique distinctio recusandae quas quod, rerum ab asperiores possimus iste assumenda!",
+
+      "date": "14-10-2023",
+      "rating": 2.7,
+      "pictureURL": [
+        "https://i.imgur.com/1Nvq8gs.png",
+        "https://picsum.photos/id/247/300/300",
+        "https://picsum.photos/id/32/300/300",
+        "https://picsum.photos/id/126/300/300",
+        "https://picsum.photos/id/297/300/300",
+        "https://picsum.photos/id/567/300/300",
+        "https://picsum.photos/id/133/300/300",
+        "https://picsum.photos/id/412/300/300",
+        "https://picsum.photos/id/135/300/300"
+      ],
+      "breakfast": false,
+      "freeparking": true,
+      "freeinternet": true,
+      "fitness": true,
+      "pool": true,
+      "freecoencillation": true,
+      "freeairportshuttle": true,
+
+      "reviews": [
+        {
+          "name": "John",
+          "text": "It was such a good city to visit. I enjoyed it"
+        },
+        {
+          "name": "Peter",
+          "text": "It was such a good city to visit. I enjoyed it"
+        },
+        {
+          "name": "Ksenia ",
+          "text": "It was such a good city to visit. I enjoyed it"
+        }
+      ]
+    },
+    {
+      "id": 258,
+      "hotelsName": "Amsterdam",
+      "position": { "lat": 52.377956, "lng": 4.89707 },
+      "isInFavorite": false,
+
+      "price": 4000,
+      "overview": " Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit nobis cum esse vero eveniet quisquam ratione temporibus cumque praesentium similique distinctio recusandae quas quod, rerum ab asperiores possimus iste assumenda!",
+
+      "date": "07-11-2023",
+      "rating": 1.7,
+
+      "pictureURL": [
+        "https://i.imgur.com/1Nvq8gs.png",
+        "https://picsum.photos/id/247/300/300",
+        "https://picsum.photos/id/32/300/300",
+        "https://picsum.photos/id/126/300/300",
+        "https://picsum.photos/id/297/300/300",
+        "https://picsum.photos/id/567/300/300",
+        "https://picsum.photos/id/133/300/300",
+        "https://picsum.photos/id/412/300/300",
+        "https://picsum.photos/id/135/300/300"
+      ],
+      "breakfast": false,
+      "parking": true,
+      "internet": true,
+      "fitness": true,
+      "pool": true,
+      "aircondition": true,
+
+      "reviews": [
+        {
+          "name": "John",
+          "text": "It was such a good city to visit. I enjoyed it"
+        },
+        {
+          "name": "Peter",
+          "text": "It was such a good city to visit. I enjoyed it"
+        },
+        {
+          "name": "Ksenia ",
+          "text": "It was such a good city to visit. I enjoyed it"
+        }
+      ]
+    },
+    {
+      "id": 487,
+      "overview": " Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit nobis cum esse vero eveniet quisquam ratione temporibus cumque praesentium similique distinctio recusandae quas quod, rerum ab asperiores possimus iste assumenda!",
+
+      "hotelsName": "Amsterdam",
+      "position": { "lat": 52.377956, "lng": 4.89707 },
+      "isInFavorite": false,
+
+      "price": 3000,
+      "date": "22-10-2023",
+      "rating": 3.7,
+      "pictureURL": [
+        "https://i.imgur.com/1Nvq8gs.png",
+        "https://picsum.photos/id/247/300/300",
+        "https://picsum.photos/id/32/300/300",
+        "https://picsum.photos/id/126/300/300",
+        "https://picsum.photos/id/297/300/300",
+        "https://picsum.photos/id/567/300/300",
+        "https://picsum.photos/id/133/300/300",
+        "https://picsum.photos/id/412/300/300",
+        "https://picsum.photos/id/135/300/300"
+      ],
+      "breakfast": false,
+      "parking": true,
+      "internet": true,
+      "fitness": true,
+      "pool": true,
+      "air-condition": true,
+
+      "reviews": [
+        {
+          "name": "John",
+          "text": "It was such a good city to visit. I enjoyed it"
+        },
+        {
+          "name": "Peter",
+          "text": "It was such a good city to visit. I enjoyed it"
+        },
+        {
+          "name": "Ksenia ",
+          "text": "It was such a good city to visit. I enjoyed it"
+        }
+      ]
+    }
+  ],
+  "flights": [
+    {
+      "id": 311,
+      "overview": " Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit nobis cum esse vero eveniet quisquam ratione temporibus cumque praesentium similique distinctio recusandae quas quod, rerum ab asperiores possimus iste assumenda!",
+
+      "hotelsName": "Gence",
+      "position": { "lat": 40.68278, "lng": 46.36056 },
+      "isInFavorite": false,
+
+      "price": 3000,
+      "date": "05-04-2023",
+      "rating": 3.7,
+
+      "pictureURL": ["/public/assets/istanbulHotelPhoto3.png"],
+      "breakfast": false,
+      "parking": true,
+      "internet": true,
+      "fitness": true,
+      "pool": true,
+      "aircondition": true,
+
+      "reviews": [
+        {
+          "name": "John",
+          "text": "It was such a good city to visit. I enjoyed it"
+        },
+        {
+          "name": "Peter",
+          "text": "It was such a good city to visit. I enjoyed it"
+        },
+        {
+          "name": "Ksenia ",
+          "text": "It was such a good city to visit. I enjoyed it"
+        }
+      ]
+    }
+  ],
+  "users": [
+    {
+      "name": "John Brown",
+      "email": "john.brown@gmail.com",
+      "phoneNumber": "+8985514",
+      "address": "Baku Ataturk Avenue 47",
+      "date-of-birth": "07/06/2002"
+    },
+    {
+      "name": "Alex Schmanovzky",
+      "email": "alexo.schman@gmail.com",
+      "phoneNumber": "+35813313365",
+      "address": "Narimanov Ataturk Avenue 47",
+      "date-of-birth": "23/04/1987"
+    }
+  ],
+  "favorites": []
+}
