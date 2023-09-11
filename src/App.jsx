@@ -17,6 +17,8 @@ import AdminTours from "./pages/AdminTours";
 import AdminHotels from "./pages/AdminHotels";
 import AdminUsers from "./pages/AdminUsers";
 import Bookings from "./pages/Bookings";
+import ProtectedRoute from "./components/ProtectedRoute";
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 
 // BUNU SADƏCƏ TEST ÜÇÜN YAZIRAM XIRDA BİR DƏYİŞİKLİK BELƏ OLSA GİTHUB EXTENTİON BUNU FAYLDA DƏYİŞİKLİK OLMUŞ KİMİ
 // QƏBUL EDİR. SAVE EDİRƏM VƏ..
@@ -38,48 +40,65 @@ function App() {
     },
   ]);
 
+  const queryClient = new QueryClient({
+    defaultOptions: {
+      queries: {
+        staleTime: 10 * 0,
+      },
+    },
+  });
+
   return (
-    <Box backgroundColor={theme.palette.primary.body}>
-      <CssBaseline />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/turlar" element={<Tours />} />
-        <Route path="/turlar/:tourId" element={<TourDetails />} />
-        <Route path="/login" element={<Login />} />
-        <Route path="/account" element={<Profile />} />
-        <Route path="/seçdiklərim" element={<FavoriteTours />} />
+    <QueryClientProvider client={queryClient}>
+      <Box backgroundColor={theme.palette.primary.body}>
+        <CssBaseline />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/turlar" element={<Tours />} />
+          <Route path="/turlar/:tourId" element={<TourDetails />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/account" element={<Profile />} />
+          <Route path="/seçdiklərim" element={<FavoriteTours />} />
 
-        <Route path="/admin-panel" element={<AppLayout />}>
-          <Route path="bookings" element={<Bookings />} />
-          <Route path="admin-tours" element={<AdminTours />} />
-          <Route path="admin-hotels" element={<AdminHotels />} />
-          <Route path="admin-users" element={<AdminUsers />} />
-        </Route>
+          <Route
+            path="/admin-panel"
+            element={
+              <ProtectedRoute>
+                <AppLayout />
+              </ProtectedRoute>
+            }
+          >
+            <Route path="bookings" element={<Bookings />} />
+            <Route path="admin-tours" element={<AdminTours />} />
+            <Route path="admin-hotels" element={<AdminHotels />} />
+            <Route path="admin-users" element={<AdminUsers />} />
+          </Route>
 
-        <Route path="*" element={<NoMatch />} />
-      </Routes>
+          <Route path="*" element={<NoMatch />} />
+        </Routes>
 
-      <Toaster
-        position="top-center"
-        gutter={12}
-        containerStyle={{ margin: "8px" }}
-        toastOptions={{
-          success: {
-            duration: 1500,
-          },
-          error: {
-            duration: 3000,
-          },
-          style: {
-            fontSize: "16px",
-            maxWidth: "500px",
-            padding: "16px 24px",
-            backgroundColor: "white",
-            color: "black",
-          },
-        }}
-      />
-    </Box>
+        <Toaster
+          position="top-center"
+          gutter={12}
+          containerStyle={{ margin: "8px" }}
+          toastOptions={{
+            success: {
+              duration: 1500,
+            },
+            error: {
+              duration: 3000,
+            },
+            style: {
+              fontSize: "16px",
+              maxWidth: "500px",
+              padding: "16px 24px",
+              backgroundColor: "white",
+              color: "black",
+            },
+          }}
+        />
+      </Box>
+    </QueryClientProvider>
   );
 }
 
