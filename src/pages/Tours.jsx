@@ -6,7 +6,6 @@ import useFetch from "../useFetch";
 import Navbar from "../components/Navbar";
 import FormSelections from "../components/FormSelections";
 import { CustomContainer, theme } from "../theme";
-import format from "date-fns/format";
 import ReusableButton from "../components/ReusableButton";
 import SearchIcon from "@mui/icons-material/Search";
 import { useSelector } from "react-redux";
@@ -16,18 +15,13 @@ import { toast } from "react-hot-toast";
 
 const Tours = () => {
   const [data, setData] = useState([]);
-  const [searchedList, setSearchedList] = useState([]);
   const [priceValue, setPriceValue] = useState([100, 3000]);
-  const [rating, setRating] = useState(1);
   const [checked, setChecked] = useState([]);
+  const [time, setTime] = useState(null);
 
   const [searchParams, setSearchParams] = useSearchParams();
 
-  const timeRange = useSelector((store) => store.tour.timeRange);
-
-  const time = format(timeRange[0].startDate, "dd-MM-yyyy");
   const selectedRegion = useSelector((store) => store.tour.city);
-  // console.log("range", format(range[0].startDate, "MM/dd/yyyy"));
 
   let additionalParams = "";
   let url;
@@ -36,35 +30,36 @@ const Tours = () => {
     checked.forEach(
       (txt) =>
         (additionalParams +=
-          "&" + txt.toLowerCase().split(" ").join("") + "=true")
+          "&" + txt?.toLowerCase()?.split(" ").join("") + "=true")
     );
     console.log("additionalParams", additionalParams);
   }
 
-  // time varsa url-de date olacaq, yoxsa olmayacaq
-  if (time !== "") {
-    url = `http://localhost:3000/hotels?price_gte=${priceValue[0]}&price_lte=${priceValue[1]}&rating_gte=${rating}&date=${time}&q=${selectedRegion}${additionalParams}`;
-  } else {
-    url = `http://localhost:3000/hotels?price_gte=${priceValue[0]}&price_lte=${priceValue[1]}&rating_gte=${rating}&q=${selectedRegion}${additionalParams}`;
-  }
+  url = `http://localhost:3000/tours?price_gte=${priceValue[0]}&price_lte=${priceValue[1]}&date=${time}&q=${selectedRegion}${additionalParams}`;
 
   const checkIn = searchParams.get("checkIn");
 
   // TODO:
 
-  const checkOut = searchParams.get("checkOut");
+  // const checkOut = searchParams.get("checkOut");
 
   const initialCity = searchParams.get("city");
 
   let initialUrl =
     checkIn && initialCity
-      ? `http://localhost:3000/hotels?date=${checkIn}&q=${initialCity}`
-      : "http://localhost:3000/hotels";
+      ? `http://localhost:3000/tours?date=${checkIn}&q=${initialCity}`
+      : "http://localhost:3000/tours";
 
   const { error, isLoading, data: firstData, refetch } = useFetch(initialUrl);
 
   function handleSearchList() {
-    setSearchParams({ date: time, city: selectedRegion });
+    setSearchParams({
+      date: time,
+      city: selectedRegion,
+      minPrice: priceValue[0],
+      maxPrice: priceValue[1],
+      checked: additionalParams,
+    });
     refetch(url);
   }
 
@@ -73,20 +68,28 @@ const Tours = () => {
     const city = searchParams.get("city");
     const checkIn = searchParams.get("checkIn");
     const checkOut = searchParams.get("checkOut");
+    const minPrice = searchParams.get("minPrice");
+    const maxPrice = searchParams.get("maxPrice");
+    const checked = searchParams.get("checked");
 
     date && searchParams.delete("date");
     checkOut && searchParams.delete("checkOut");
     checkIn && searchParams.delete("checkIn");
     city && searchParams.delete("city");
+    minPrice && searchParams.delete("minPrice");
+    maxPrice && searchParams.delete("maxPrice");
+    checked && searchParams.delete("checked");
+
     toast.success("Filter təmizləndi");
 
-    url = "http://localhost:3000/hotels";
+    url = "http://localhost:3000/tours";
     refetch(url);
     setData([]);
+    setChecked([]);
+    setTime(false);
+    setPriceValue([100, 3000]);
     setSearchParams(searchParams);
   };
-
-  console.log("zooa0", firstData);
 
   return (
     <Box>
@@ -105,7 +108,7 @@ const Tours = () => {
           justifyContent: "center",
         }}
       >
-        <FormSelections />
+        <FormSelections forType="tour" />
         <ReusableButton
           onClick={handleSearchList}
           bgColor={theme.palette.primary.main}
@@ -114,12 +117,8 @@ const Tours = () => {
         </ReusableButton>
       </Box>
       <TourListing
-        searchedList={searchedList}
-        setSearchedList={setSearchedList}
         priceValue={priceValue}
         setPriceValue={setPriceValue}
-        rating={rating}
-        setRating={setRating}
         checked={checked}
         setChecked={setChecked}
         data={firstData}
