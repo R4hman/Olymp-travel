@@ -15,15 +15,6 @@ const DateRangePicker = () => {
 
   const timeRange = useSelector((store) => store.tour.timeRange);
 
-  // date state
-  // const [range, setRange] = useState([
-  //   {
-  //     startDate: new Date(),
-  //     endDate: addDays(new Date(), 7),
-  //     key: "selection",
-  //   },
-  // ]);
-
   // open close
   const [open, setOpen] = useState(false);
 
@@ -46,17 +37,10 @@ const DateRangePicker = () => {
 
   // Hide on outside click
   const hideOnClickOutside = (e) => {
-    // console.log(refOne.current)
-    // console.log(e.target)
     if (refOne.current && !refOne.current.contains(e.target)) {
       setOpen(false);
     }
   };
-
-  // const handleTest = (e) => {
-  //   console.log("e", e.selection);
-  //   dispatch(setTime([e.selection]));
-  // };
 
   return (
     <Box
@@ -70,10 +54,6 @@ const DateRangePicker = () => {
       }}
     >
       <Input
-        // value={`${format(
-        //   range[0].startDate,
-        //   "MM/dd/yyyy"
-        // )} to ${format(range[0].endDate, "MM/dd/yyyy")}`}
         readOnly
         sx={{
           fontSize: "16px",
@@ -105,8 +85,6 @@ const DateRangePicker = () => {
       >
         {open && (
           <DateRange
-            // onChange={(item) => setRange([item.selection])}
-            // onChange={(item) => dispatch(setTime([item.selection]))}
             onChange={(e) => dispatch(setTime([e.selection]))}
             editableDateInputs={true}
             moveRangeOnFirstSelection={false}
