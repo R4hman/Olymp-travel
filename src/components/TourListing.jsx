@@ -17,17 +17,235 @@ const freebies = [
 ];
 
 const amenities = ["24hr front desk", "Air condition", "fitness", "pool"];
+const countries = [
+  {
+    country: "ABŞ",
+    cities: [
+      "Nyu york",
+      "San Francisco",
+      "Kaliforniya",
+      "Vaşinqton",
+      "Massachusetts",
+      "Orlando",
+      "Mayami",
+      "Oklahoma",
+      "Oregon",
+      "Pennsylvania",
+    ],
+  },
+  {
+    country: "Almaniya",
+    cities: [
+      "Berlin",
+      "Franfurt",
+      "Leipzig",
+      "Vaşinqton",
+      "Massachusetts",
+      "Orlando",
+      "Mayami",
+      "Oklahoma",
+      "Oregon",
+      "Pennsylvania",
+    ],
+  },
+  {
+    country: "İspaniya",
+    cities: [
+      "Barselona",
+      "Madrid",
+      "Sevilya",
+      "Vaşinqton",
+      "Massachusetts",
+      "Orlando",
+      "Mayami",
+      "Oklahoma",
+      "Oregon",
+      "Pennsylvania",
+    ],
+  },
+  {
+    country: "Portuqaliya",
+    cities: [
+      "Lisabon",
+      "San Francisco",
+      "Kaliforniya",
+      "Vaşinqton",
+      "Massachusetts",
+      "Orlando",
+      "Mayami",
+      "Oklahoma",
+      "Oregon",
+      "Pennsylvania",
+    ],
+  },
+  {
+    country: "Hollandiya",
+    cities: [
+      "Amsterdam ",
+      "Eindhoven",
+      "Kaliforniya",
+      "Vaşinqton",
+      "Massachusetts",
+      "Orlando",
+      "Mayami",
+      "Oklahoma",
+      "Oregon",
+      "Pennsylvania",
+    ],
+  },
+  {
+    country: "İtaliya",
+    cities: [
+      "Roma",
+      "Florensiya",
+      "Venesiya",
+      "Milan",
+      "Massachusetts",
+      "Orlando",
+      "Mayami",
+      "Oklahoma",
+      "Oregon",
+      "Pennsylvania",
+    ],
+  },
+  {
+    country: "Fransa",
+    cities: [
+      "Paris",
+      "Marsel",
+      "Tuluz",
+      "Vaşinqton",
+      "Massachusetts",
+      "Orlando",
+      "Mayami",
+      "Oklahoma",
+      "Oregon",
+      "Pennsylvania",
+    ],
+  },
+  {
+    country: "Norveç",
+    cities: [
+      "Oslo ",
+      "Eindhoven",
+      "Kaliforniya",
+      "Vaşinqton",
+      "Massachusetts",
+      "Orlando",
+      "Mayami",
+      "Oklahoma",
+      "Oregon",
+      "Pennsylvania",
+    ],
+  },
+  {
+    country: "Birləşmiş Ərəb Əmirlikləri",
+    cities: [
+      "London ",
+      "Liverpul",
+      "Lester",
+      "Mançester",
+      "Massachusetts",
+      "Orlando",
+      "Mayami",
+      "Oklahoma",
+      "Oregon",
+      "Pennsylvania",
+    ],
+  },
+  {
+    country: "Böyük Britaniya",
+    cities: [
+      "London ",
+      "Liverpul",
+      "Lester",
+      "Mançester",
+      "Massachusetts",
+      "Orlando",
+      "Mayami",
+      "Oklahoma",
+      "Oregon",
+      "Pennsylvania",
+    ],
+  },
+  {
+    country: "Braziliya",
+    cities: [
+      "Sao Paolo",
+      "Rio de Janeiro",
+      "Lester",
+      "Mançester",
+      "Massachusetts",
+      "Orlando",
+      "Mayami",
+      "Oklahoma",
+      "Oregon",
+      "Pennsylvania",
+    ],
+  },
+];
+
+const typeOfTour = [
+  "8 Mart",
+  "Ailəvi turlar",
+  "Bal ayı turları",
+  "Ekstrim turları",
+  "Erkən rezervasiya turları",
+  "Gənclər üçün turlar",
+  "Halal turlar",
+  "Konsertlər ",
+  "Kruiz turları",
+  "Lüks turlar",
+  "Müalicəvi turlar",
+  "Novruz turları",
+  "Qrup turları",
+  "Ramazan turları",
+  "Serial turları",
+  "Sevgililər günü",
+  "Səyahət turları",
+  "Viza tələb olunmayan turlar",
+  "Xaricilər üçün ekskursiyalar",
+  "Yay turları",
+  "Yeni il turları",
+  "Çimərlik turları",
+  "Əyləncəli turlar",
+];
+
+let cities = [
+  "Sao Paolo",
+  "Rio de Janeiro",
+  "Lester",
+  "Mançester",
+  "Massachusetts",
+  "Orlando",
+  "Mayami",
+  "Oklahoma",
+  "Oregon",
+  "Pennsylvania",
+];
+
+const months = [
+  "Yanvar",
+  "Fevral",
+  "Mart",
+  "Aprel",
+  "May",
+  "İyun",
+  "İyul",
+  "Avqust",
+  "Sentyabr",
+  "Oktyabr",
+  "Noyabr",
+  "Dekabr",
+];
 
 const postsPerPage = 3;
 let arrayForHoldingPosts = [];
 
 const TourListing = ({
-  searchedList,
-  setSearchedList,
   priceValue,
   setPriceValue,
-  rating,
-  setRating,
+
   setChecked,
   checked,
   data,
@@ -40,17 +258,34 @@ const TourListing = ({
 
   const theme = useTheme();
 
+  // if (checked.length > 0) {
+  //   cityToShow = countries.filter((country) => {
+  //     return country.country === checked[checked.length - 1];
+  //   })[0]?.cities;
+  // } else if (!cityToShow) {
+  //   cityToShow = cities;
+  // }
+
+  const cityToShow = countries.filter((country) => {
+    return country.country === checked[checked.length - 1];
+  })[0]?.cities;
+
+  console.log("icini sikdiyim cities", cities);
+  console.log("icini sikdiyim checked", checked);
+  console.log("icini sikdiyim cityToShw", cityToShow);
+  console.log("typeof cityToShow:  " + Array.isArray(cityToShow));
+  // cityToShow.map((c) => console.log("cityToShow: " + c + "b"));
+
+  // console.log("checked", cityToShow);
+  // console.log("country  ", cityToShow);
+  // console.log("checked", cityToShow);
+
   const loopWithSlice = (start, end) => {
-    console.log("start: " + start);
-    console.log("end: " + end);
     const slicedPosts = data.slice(start, end);
-    console.log("slicedPost", slicedPosts);
     // arrayForHoldingPosts = [...arrayForHoldingPosts, ...slicedPosts];
     // setPostsToShow(arrayForHoldingPosts);
     setPostsToShow(slicedPosts);
   };
-
-  console.log("post to show", postsToShow);
 
   // useEffect(() => {
   //   loopWithSlice(0, postsPerPage);
@@ -70,35 +305,69 @@ const TourListing = ({
     <CustomContainer>
       <Grid container columns={12} spacing={2}>
         <Grid item xs={3}>
-          <Filters
-            priceValue={priceValue}
-            setPriceValue={setPriceValue}
-            rating={rating}
-            setRating={setRating}
-          />
+          <Filters priceValue={priceValue} setPriceValue={setPriceValue} />
           <Stack sx={{ pt: "0.5rem " }}>
             <FlexBetween sx={{ pb: "0.5rem" }}>
-              <Typography variant="subtitle1">Freebies</Typography>
+              <Typography variant="subtitle1">Ölkə</Typography>
               <KeyboardArrowDown />
             </FlexBetween>
             <CheckListHotel
               checked={checked}
               setChecked={setChecked}
-              data={freebies}
-              sx={{ display: "flex", justifyContent: "flex-start" }}
+              data={countries}
+              sx={{
+                display: "flex",
+                justifyContent: "flex-start",
+              }}
             />
           </Stack>
           <Divider />
+
           <Stack>
             <FlexBetween sx={{ padding: "0.5rem  0" }}>
-              <Typography variant="subtitle1">Amenities</Typography>
+              <Typography variant="subtitle1">Şəhər</Typography>
               <KeyboardArrowDown />
             </FlexBetween>
             <CheckListHotel
               checked={checked}
               setChecked={setChecked}
-              data={amenities}
-              sx={{ display: "flex", justifyContent: "flex-start" }}
+              data={!cityToShow ? cities : cityToShow}
+              // data={amenities}
+              // data={cities}
+              sx={{
+                display: "flex",
+                justifyContent: "flex-start",
+              }}
+            />
+          </Stack>
+          <Stack>
+            <FlexBetween sx={{ padding: "0.5rem  0" }}>
+              <Typography variant="subtitle1">Turun növü</Typography>
+              <KeyboardArrowDown />
+            </FlexBetween>
+            <CheckListHotel
+              checked={checked}
+              setChecked={setChecked}
+              data={typeOfTour}
+              sx={{
+                display: "flex",
+                justifyContent: "flex-start",
+              }}
+            />
+          </Stack>
+          <Stack>
+            <FlexBetween sx={{ padding: "0.5rem  0" }}>
+              <Typography variant="subtitle1">Turun növü</Typography>
+              <KeyboardArrowDown />
+            </FlexBetween>
+            <CheckListHotel
+              checked={checked}
+              setChecked={setChecked}
+              data={months}
+              sx={{
+                display: "flex",
+                justifyContent: "flex-start",
+              }}
             />
           </Stack>
         </Grid>
