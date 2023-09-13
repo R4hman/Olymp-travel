@@ -6,11 +6,12 @@
       "price": 1000,
       "date": "09-09-2023",
       "rating": 4.6,
-      "position": { "lat": 41.015137, "lng": 28.97953 },
+      "position": {
+        "lat": 41.015137,
+        "lng": 28.97953
+      },
       "isInFavorite": false,
-
       "overview": " Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit nobis cum esse vero eveniet quisquam ratione temporibus cumque praesentium similique distinctio recusandae quas quod, rerum ab asperiores possimus iste assumenda!",
-
       "pictureURL": [
         "https://i.imgur.com/1Nvq8gs.png",
         "https://picsum.photos/id/247/300/300",
@@ -26,7 +27,6 @@
       "pool": true,
       "aircondition": true,
       "freecoencillation": true,
-
       "reviews": [
         {
           "src": "https://i.pravatar.cc/126          ",
@@ -51,11 +51,12 @@
       "price": 1000,
       "date": "09-09-2023",
       "rating": 4.6,
-      "position": { "lat": 40.409264, "lng": 49.867092 },
+      "position": {
+        "lat": 40.409264,
+        "lng": 49.867092
+      },
       "isInFavorite": false,
-
       "overview": " Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit nobis cum esse vero eveniet quisquam ratione temporibus cumque praesentium similique distinctio recusandae quas quod, rerum ab asperiores possimus iste assumenda!",
-
       "pictureURL": [
         "https://i.imgur.com/1Nvq8gs.png",
         "https://picsum.photos/id/247/300/300",
@@ -71,7 +72,6 @@
       "pool": true,
       "aircondition": true,
       "freecoencillation": true,
-
       "reviews": [
         {
           "src": "https://i.pravatar.cc/126          ",
@@ -96,11 +96,12 @@
       "price": 3000,
       "date": "17-09-2023",
       "rating": 4.6,
-      "position": { "lat": 38.75428, "lng": 48.85062 },
+      "position": {
+        "lat": 38.75428,
+        "lng": 48.85062
+      },
       "isInFavorite": false,
-
       "overview": " Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit nobis cum esse vero eveniet quisquam ratione temporibus cumque praesentium similique distinctio recusandae quas quod, rerum ab asperiores possimus iste assumenda!",
-
       "pictureURL": [
         "https://i.imgur.com/1Nvq8gs.png",
         "https://picsum.photos/id/247/300/300",
@@ -116,7 +117,6 @@
       "internet": true,
       "pool": true,
       "aircondition": true,
-
       "reviews": [
         {
           "src": "https://i.pravatar.cc/126          ",
@@ -151,11 +151,12 @@
       "price": 3000,
       "date": "17-09-2023",
       "rating": 4.6,
-      "position": { "lat": 38.75428, "lng": 48.85062 },
+      "position": {
+        "lat": 38.75428,
+        "lng": 48.85062
+      },
       "isInFavorite": false,
-
       "overview": " Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit nobis cum esse vero eveniet quisquam ratione temporibus cumque praesentium similique distinctio recusandae quas quod, rerum ab asperiores possimus iste assumenda!",
-
       "pictureURL": [
         "https://i.imgur.com/1Nvq8gs.png",
         "https://picsum.photos/id/247/300/300",
@@ -171,7 +172,6 @@
       "internet": true,
       "pool": true,
       "aircondition": true,
-
       "reviews": [
         {
           "src": "https://i.pravatar.cc/126          ",
@@ -203,14 +203,15 @@
     {
       "id": 121,
       "hotelsName": "Lankaran",
-      "position": { "lat": 38.75428, "lng": 48.85062 },
+      "position": {
+        "lat": 38.75428,
+        "lng": 48.85062
+      },
       "isInFavorite": false,
-
       "price": 3000,
       "date": "17-09-2023",
       "rating": 1.6,
       "overview": " Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit nobis cum esse vero eveniet quisquam ratione temporibus cumque praesentium similique distinctio recusandae quas quod, rerum ab asperiores possimus iste assumenda!",
-
       "pictureURL": [
         "https://i.imgur.com/1Nvq8gs.png",
         "https://picsum.photos/id/247/300/300",
@@ -226,7 +227,6 @@
       "internet": true,
       "pool": true,
       "aircondition": true,
-
       "reviews": [
         {
           "src": "https://i.pravatar.cc/126          ",
@@ -251,11 +251,12 @@
       "price": 1000,
       "date": "17-09-2023",
       "rating": 3.6,
-      "position": { "lat": 38.75428, "lng": 48.85062 },
+      "position": {
+        "lat": 38.75428,
+        "lng": 48.85062
+      },
       "isInFavorite": false,
-
       "overview": " Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit nobis cum esse vero eveniet quisquam ratione temporibus cumque praesentium similique distinctio recusandae quas quod, rerum ab asperiores possimus iste assumenda!",
-
       "pictureURL": [
         "https://i.imgur.com/1Nvq8gs.png",
         "https://picsum.photos/id/247/300/300",
@@ -270,7 +271,6 @@
       "fitness": true,
       "pool": true,
       "aircondition": true,
-
       "reviews": [
         {
           "src": "https://i.pravatar.cc/126          ",
@@ -294,12 +294,13 @@
       "hotelsName": "Lankaran",
       "price": 500,
       "date": "17-09-2023",
-      "position": { "lat": 38.75428, "lng": 48.85062 },
+      "position": {
+        "lat": 38.75428,
+        "lng": 48.85062
+      },
       "isInFavorite": false,
-
       "rating": 2.6,
       "overview": " Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit nobis cum esse vero eveniet quisquam ratione temporibus cumque praesentium similique distinctio recusandae quas quod, rerum ab asperiores possimus iste assumenda!",
-
       "pictureURL": [
         "https://i.imgur.com/1Nvq8gs.png",
         "https://picsum.photos/id/247/300/300",
@@ -314,7 +315,6 @@
       "fitness": true,
       "pool": true,
       "aircondition": true,
-
       "reviews": [
         {
           "src": "https://i.pravatar.cc/126          ",
@@ -338,12 +338,13 @@
       "hotelsName": "CVK Park Bosphorus Hotel Istanbul",
       "price": 6000,
       "date": "09-09-2023",
-      "position": { "lat": 41.015137, "lng": 28.97953 },
+      "position": {
+        "lat": 41.015137,
+        "lng": 28.97953
+      },
       "isInFavorite": false,
-
       "rating": 4.4,
       "overview": " Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit nobis cum esse vero eveniet quisquam ratione temporibus cumque praesentium similique distinctio recusandae quas quod, rerum ab asperiores possimus iste assumenda!",
-
       "pictureURL": [
         "https://i.imgur.com/1Nvq8gs.png",
         "https://picsum.photos/id/247/300/300",
@@ -358,7 +359,6 @@
       "fitness": true,
       "pool": true,
       "aircondition": true,
-
       "reviews": [
         {
           "name": "John",
@@ -379,12 +379,13 @@
       "hotelsName": "Eresin Hotels Sultanahmet - Boutique Class",
       "price": 2000,
       "overview": " Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit nobis cum esse vero eveniet quisquam ratione temporibus cumque praesentium similique distinctio recusandae quas quod, rerum ab asperiores possimus iste assumenda!",
-
       "date": "09-09-2023",
       "rating": 4.8,
-      "position": { "lat": 41.015137, "lng": 28.97953 },
+      "position": {
+        "lat": 41.015137,
+        "lng": 28.97953
+      },
       "isInFavorite": false,
-
       "pictureURL": [
         "https://i.imgur.com/1Nvq8gs.png",
         "https://picsum.photos/id/247/300/300",
@@ -398,10 +399,8 @@
       ],
       "freebreakfast": true,
       "freeparking": true,
-
       "fitness": true,
       "pool": true,
-
       "reviews": [
         {
           "name": "Alicia",
@@ -422,12 +421,13 @@
       "hotelsName": "Eresin Hotels Sultanahmet - Boutique Class",
       "price": 2000,
       "overview": " Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit nobis cum esse vero eveniet quisquam ratione temporibus cumque praesentium similique distinctio recusandae quas quod, rerum ab asperiores possimus iste assumenda!",
-
       "date": "09-09-2023",
       "rating": 4.8,
-      "position": { "lat": 41.015137, "lng": 28.97953 },
+      "position": {
+        "lat": 41.015137,
+        "lng": 28.97953
+      },
       "isInFavorite": false,
-
       "pictureURL": [
         "https://i.imgur.com/1Nvq8gs.png",
         "https://picsum.photos/id/247/300/300",
@@ -444,7 +444,6 @@
       "freeparking": true,
       "fitness": true,
       "pool": true,
-
       "reviews": [
         {
           "name": "Alicia",
@@ -463,12 +462,13 @@
     {
       "id": 278,
       "hotelsName": "Eresin Hotels Sultanahmet - Boutique Class",
-      "position": { "lat": 41.015137, "lng": 28.97953 },
+      "position": {
+        "lat": 41.015137,
+        "lng": 28.97953
+      },
       "isInFavorite": false,
-
       "price": 2000,
       "overview": " Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit nobis cum esse vero eveniet quisquam ratione temporibus cumque praesentium similique distinctio recusandae quas quod, rerum ab asperiores possimus iste assumenda!",
-
       "date": "09-09-2023",
       "rating": 4.8,
       "pictureURL": [
@@ -487,7 +487,6 @@
       "freeparking": true,
       "fitness": true,
       "pool": true,
-
       "reviews": [
         {
           "name": "Alicia",
@@ -506,14 +505,15 @@
     {
       "id": 597,
       "hotelsName": "Eresin Hotels Sultanahmet - Boutique Class",
-      "position": { "lat": 41.015137, "lng": 28.97953 },
-
+      "position": {
+        "lat": 41.015137,
+        "lng": 28.97953
+      },
       "price": 2000,
       "date": "17-08-2023",
       "rating": 3.8,
       "isInFavorite": false,
       "overview": " Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit nobis cum esse vero eveniet quisquam ratione temporibus cumque praesentium similique distinctio recusandae quas quod, rerum ab asperiores possimus iste assumenda!",
-
       "pictureURL": [
         "https://i.imgur.com/1Nvq8gs.png",
         "https://picsum.photos/id/247/300/300",
@@ -527,10 +527,8 @@
       ],
       "freebreakfast": true,
       "freeparking": true,
-
       "fitness": true,
       "pool": true,
-
       "reviews": [
         {
           "name": "Alicia",
@@ -551,12 +549,13 @@
       "hotelsName": "Eresin Hotels Sultanahmet - Boutique Class",
       "price": 1500,
       "date": "22-10-2023",
-      "position": { "lat": 41.015137, "lng": 28.97953 },
+      "position": {
+        "lat": 41.015137,
+        "lng": 28.97953
+      },
       "isInFavorite": false,
-
       "rating": 4.7,
       "overview": " Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit nobis cum esse vero eveniet quisquam ratione temporibus cumque praesentium similique distinctio recusandae quas quod, rerum ab asperiores possimus iste assumenda!",
-
       "pictureURL": [
         "https://i.imgur.com/1Nvq8gs.png",
         "https://picsum.photos/id/247/300/300",
@@ -573,7 +572,6 @@
       "fitness": true,
       "pool": true,
       "aircondition": true,
-
       "reviews": [
         {
           "name": "John",
@@ -592,14 +590,15 @@
     {
       "id": 849,
       "overview": " Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit nobis cum esse vero eveniet quisquam ratione temporibus cumque praesentium similique distinctio recusandae quas quod, rerum ab asperiores possimus iste assumenda!",
-
       "hotelsName": "Eresin Hotels Sultanahmet - Boutique Class",
       "price": 3000,
       "date": "22-10-2023",
       "rating": 3.7,
-      "position": { "lat": 41.015137, "lng": 28.97953 },
+      "position": {
+        "lat": 41.015137,
+        "lng": 28.97953
+      },
       "isInFavorite": false,
-
       "pictureURL": [
         "https://i.imgur.com/1Nvq8gs.png",
         "https://picsum.photos/id/247/300/300",
@@ -616,7 +615,6 @@
       "fitness": true,
       "pool": true,
       "aircondition": true,
-
       "reviews": [
         {
           "name": "John",
@@ -635,12 +633,13 @@
     {
       "id": 606,
       "hotelsName": "Gence",
-      "position": { "lat": 40.68278, "lng": 46.36056 },
+      "position": {
+        "lat": 40.68278,
+        "lng": 46.36056
+      },
       "isInFavorite": false,
-
       "price": 3000,
       "overview": " Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit nobis cum esse vero eveniet quisquam ratione temporibus cumque praesentium similique distinctio recusandae quas quod, rerum ab asperiores possimus iste assumenda!",
-
       "date": "22-10-2023",
       "rating": 3.7,
       "pictureURL": [
@@ -660,7 +659,6 @@
       "pool": true,
       "aircondition": true,
       "freeairportshuttle": true,
-
       "reviews": [
         {
           "name": "John",
@@ -679,11 +677,12 @@
     {
       "id": 788,
       "overview": " Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit nobis cum esse vero eveniet quisquam ratione temporibus cumque praesentium similique distinctio recusandae quas quod, rerum ab asperiores possimus iste assumenda!",
-
       "hotelsName": "Gence",
-      "position": { "lat": 40.68278, "lng": 46.36056 },
+      "position": {
+        "lat": 40.68278,
+        "lng": 46.36056
+      },
       "isInFavorite": false,
-
       "price": 3000,
       "date": "22-10-2023",
       "rating": 3.7,
@@ -704,7 +703,6 @@
       "pool": true,
       "aircondition": true,
       "freecoencillation": true,
-
       "reviews": [
         {
           "name": "John",
@@ -723,11 +721,12 @@
     {
       "id": 165,
       "overview": " Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit nobis cum esse vero eveniet quisquam ratione temporibus cumque praesentium similique distinctio recusandae quas quod, rerum ab asperiores possimus iste assumenda!",
-
       "hotelsName": "Amsterdam",
-      "position": { "lat": 52.377956, "lng": 4.89707 },
+      "position": {
+        "lat": 52.377956,
+        "lng": 4.89707
+      },
       "isInFavorite": false,
-
       "price": 2000,
       "date": "14-10-2023",
       "rating": 4.7,
@@ -748,7 +747,6 @@
       "fitness": true,
       "pool": true,
       "freecoencillation": true,
-
       "reviews": [
         {
           "name": "John",
@@ -767,12 +765,13 @@
     {
       "id": 165,
       "hotelsName": "Amsterdam",
-      "position": { "lat": 52.377956, "lng": 4.89707 },
+      "position": {
+        "lat": 52.377956,
+        "lng": 4.89707
+      },
       "isInFavorite": false,
-
       "price": 1000,
       "overview": " Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit nobis cum esse vero eveniet quisquam ratione temporibus cumque praesentium similique distinctio recusandae quas quod, rerum ab asperiores possimus iste assumenda!",
-
       "date": "14-10-2023",
       "rating": 3.7,
       "pictureURL": [
@@ -789,11 +788,8 @@
       "breakfast": false,
       "freeparking": true,
       "freeinternet": true,
-
       "pool": true,
-
       "freeairportshuttle": true,
-
       "reviews": [
         {
           "name": "John",
@@ -812,12 +808,13 @@
     {
       "id": 165,
       "hotelsName": "Amsterdam",
-      "position": { "lat": 52.377956, "lng": 4.89707 },
+      "position": {
+        "lat": 52.377956,
+        "lng": 4.89707
+      },
       "isInFavorite": false,
-
       "price": 3000,
       "overview": " Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit nobis cum esse vero eveniet quisquam ratione temporibus cumque praesentium similique distinctio recusandae quas quod, rerum ab asperiores possimus iste assumenda!",
-
       "date": "14-10-2023",
       "rating": 2.7,
       "pictureURL": [
@@ -838,7 +835,6 @@
       "pool": true,
       "freecoencillation": true,
       "freeairportshuttle": true,
-
       "reviews": [
         {
           "name": "John",
@@ -857,15 +853,15 @@
     {
       "id": 258,
       "hotelsName": "Amsterdam",
-      "position": { "lat": 52.377956, "lng": 4.89707 },
+      "position": {
+        "lat": 52.377956,
+        "lng": 4.89707
+      },
       "isInFavorite": false,
-
       "price": 4000,
       "overview": " Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit nobis cum esse vero eveniet quisquam ratione temporibus cumque praesentium similique distinctio recusandae quas quod, rerum ab asperiores possimus iste assumenda!",
-
       "date": "07-11-2023",
       "rating": 1.7,
-
       "pictureURL": [
         "https://i.imgur.com/1Nvq8gs.png",
         "https://picsum.photos/id/247/300/300",
@@ -883,7 +879,6 @@
       "fitness": true,
       "pool": true,
       "aircondition": true,
-
       "reviews": [
         {
           "name": "John",
@@ -902,11 +897,12 @@
     {
       "id": 487,
       "overview": " Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit nobis cum esse vero eveniet quisquam ratione temporibus cumque praesentium similique distinctio recusandae quas quod, rerum ab asperiores possimus iste assumenda!",
-
       "hotelsName": "Amsterdam",
-      "position": { "lat": 52.377956, "lng": 4.89707 },
+      "position": {
+        "lat": 52.377956,
+        "lng": 4.89707
+      },
       "isInFavorite": false,
-
       "price": 3000,
       "date": "22-10-2023",
       "rating": 3.7,
@@ -927,6 +923,59 @@
       "fitness": true,
       "pool": true,
       "air-condition": true,
+      "reviews": [
+        {
+          "name": "John",
+          "text": "It was such a good city to visit. I enjoyed it"
+        },
+        {
+          "name": "Peter",
+          "text": "It was such a good city to visit. I enjoyed it"
+        },
+        {
+          "name": "Ksenia ",
+          "text": "It was such a good city to visit. I enjoyed it"
+        }
+      ]
+    },
+    {
+      "hotelsName": "Rahman",
+      "price": "15",
+      "date": "27-05-2023",
+      "position": "Quba",
+      "overview": "quba",
+      "pictureURL": [
+        {
+          "path": "Rectangle 51.png"
+        },
+        {
+          "path": "testimonial-user-cover-24.png"
+        },
+        {
+          "path": "image 1.png"
+        },
+        {
+          "path": "image 3.png"
+        }
+      ],
+      "id": 9552
+    }
+  ],
+  "tours": [
+    {
+      "id": 317,
+      "overview": " Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit nobis cum esse vero eveniet quisquam ratione temporibus cumque praesentium similique distinctio recusandae quas quod, rerum ab asperiores possimus iste assumenda!",
+      "city": "Ganja",
+      "country": "Azerbaijan",
+      "type": "8 Mart",
+      "position": {
+        "lat": 40.68278,
+        "lng": 46.36056
+      },
+      "isInFavorite": false,
+      "price": 3000,
+      "date": "05-04-2023",
+      "pictureURL": ["/public/assets/istanbulHotelPhoto3.png"],
 
       "reviews": [
         {
@@ -942,28 +991,111 @@
           "text": "It was such a good city to visit. I enjoyed it"
         }
       ]
-    }
-  ],
-  "flights": [
+    },
     {
-      "id": 311,
+      "id": 319,
       "overview": " Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit nobis cum esse vero eveniet quisquam ratione temporibus cumque praesentium similique distinctio recusandae quas quod, rerum ab asperiores possimus iste assumenda!",
-
-      "hotelsName": "Gence",
-      "position": { "lat": 40.68278, "lng": 46.36056 },
+      "city": "Ganja",
+      "country": "Azerbaijan",
+      "type": "8 Mart",
+      "position": {
+        "lat": 40.68278,
+        "lng": 46.36056
+      },
       "isInFavorite": false,
-
       "price": 3000,
       "date": "05-04-2023",
-      "rating": 3.7,
-
       "pictureURL": ["/public/assets/istanbulHotelPhoto3.png"],
-      "breakfast": false,
-      "parking": true,
-      "internet": true,
-      "fitness": true,
-      "pool": true,
-      "aircondition": true,
+
+      "reviews": [
+        {
+          "name": "John",
+          "text": "It was such a good city to visit. I enjoyed it"
+        },
+        {
+          "name": "Peter",
+          "text": "It was such a good city to visit. I enjoyed it"
+        },
+        {
+          "name": "Ksenia ",
+          "text": "It was such a good city to visit. I enjoyed it"
+        }
+      ]
+    },
+    {
+      "id": 331,
+      "overview": " Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit nobis cum esse vero eveniet quisquam ratione temporibus cumque praesentium similique distinctio recusandae quas quod, rerum ab asperiores possimus iste assumenda!",
+      "city": "Ganja",
+      "country": "Azerbaijan",
+      "type": "8 Mart",
+      "position": {
+        "lat": 40.68278,
+        "lng": 46.36056
+      },
+      "isInFavorite": false,
+      "price": 3000,
+      "date": "05-04-2023",
+      "pictureURL": ["/public/assets/istanbulHotelPhoto3.png"],
+
+      "reviews": [
+        {
+          "name": "John",
+          "text": "It was such a good city to visit. I enjoyed it"
+        },
+        {
+          "name": "Peter",
+          "text": "It was such a good city to visit. I enjoyed it"
+        },
+        {
+          "name": "Ksenia ",
+          "text": "It was such a good city to visit. I enjoyed it"
+        }
+      ]
+    },
+    {
+      "id": 323,
+      "overview": " Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit nobis cum esse vero eveniet quisquam ratione temporibus cumque praesentium similique distinctio recusandae quas quod, rerum ab asperiores possimus iste assumenda!",
+      "city": "Ganja",
+      "country": "Azerbaijan",
+      "type": "8 Mart",
+      "position": {
+        "lat": 40.68278,
+        "lng": 46.36056
+      },
+      "isInFavorite": false,
+      "price": 3000,
+      "date": "05-04-2023",
+      "pictureURL": ["/public/assets/istanbulHotelPhoto3.png"],
+
+      "reviews": [
+        {
+          "name": "John",
+          "text": "It was such a good city to visit. I enjoyed it"
+        },
+        {
+          "name": "Peter",
+          "text": "It was such a good city to visit. I enjoyed it"
+        },
+        {
+          "name": "Ksenia ",
+          "text": "It was such a good city to visit. I enjoyed it"
+        }
+      ]
+    },
+    {
+      "id": 356,
+      "overview": " Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit nobis cum esse vero eveniet quisquam ratione temporibus cumque praesentium similique distinctio recusandae quas quod, rerum ab asperiores possimus iste assumenda!",
+      "city": "Ganja",
+      "country": "Azerbaijan",
+      "type": "8 Mart",
+      "position": {
+        "lat": 40.68278,
+        "lng": 46.36056
+      },
+      "isInFavorite": false,
+      "price": 3000,
+      "date": "05-04-2023",
+      "pictureURL": ["/public/assets/istanbulHotelPhoto3.png"],
 
       "reviews": [
         {
