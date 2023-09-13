@@ -11,14 +11,7 @@ import { useState } from "react";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import { FlexBetween } from "../theme";
 
-const Filters = ({ priceValue, setPriceValue, rating, setRating }) => {
-  function handleRatingBtn(e) {
-    setRating(+e.target.value);
-  }
-
-  // const handleChange = (event) => {
-  //   setPriceValue(event);
-  // };
+const Filters = ({ priceValue, setPriceValue }) => {
   const handleChange = (event, newValue) => {
     setPriceValue(newValue);
   };
@@ -59,37 +52,6 @@ const Filters = ({ priceValue, setPriceValue, rating, setRating }) => {
             <Typography variant="subtitle2">$ {priceValue[0]}</Typography>
             <Typography variant="subtitle2">$ {priceValue[1]}</Typography>
           </FlexBetween>
-        </Box>
-      </Stack>
-      <Divider sx={{ padding: "0.5rem" }} />
-      <Stack sx={{ pt: "0.5rem" }}>
-        <FlexBetween sx={{ pb: "0.5rem" }}>
-          <Typography variant="subtitle1">Rating</Typography>
-          <KeyboardArrowDownIcon />
-        </FlexBetween>
-        <Box>
-          <ButtonGroup
-            button="true"
-            group="true"
-            color="inherit"
-            onClick={(e) => handleRatingBtn(e)}
-          >
-            <Button value="0" key="one">
-              0+
-            </Button>
-            <Button value="1" key="two">
-              1+
-            </Button>
-            <Button value="2" key="three">
-              2+
-            </Button>
-            <Button value="3" key="three">
-              3+
-            </Button>
-            <Button value="4" key="three">
-              4+
-            </Button>
-          </ButtonGroup>
         </Box>
       </Stack>
       <Divider sx={{ padding: "0.5rem" }} />
