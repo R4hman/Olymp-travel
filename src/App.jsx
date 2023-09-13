@@ -19,6 +19,8 @@ import AdminUsers from "./pages/AdminUsers";
 import Bookings from "./pages/Bookings";
 import ProtectedRoute from "./components/ProtectedRoute";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+import Hotels from "./pages/Hotels";
+import HotelDetails from "./pages/HotelDetails";
 
 // BUNU SADƏCƏ TEST ÜÇÜN YAZIRAM XIRDA BİR DƏYİŞİKLİK BELƏ OLSA GİTHUB EXTENTİON BUNU FAYLDA DƏYİŞİKLİK OLMUŞ KİMİ
 // QƏBUL EDİR. SAVE EDİRƏM VƏ..
@@ -56,6 +58,8 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/turlar" element={<Tours />} />
           <Route path="/turlar/:tourId" element={<TourDetails />} />
+          <Route path="/otellər" element={<Hotels />} />
+          <Route path="/otellər/:hotelId" element={<HotelDetails />} />
           <Route path="/login" element={<Login />} />
           <Route path="/account" element={<Profile />} />
           <Route path="/seçdiklərim" element={<FavoriteTours />} />
