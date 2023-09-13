@@ -39,8 +39,6 @@ const TourListItem = ({ item }) => {
     // item.isInFavorite = item.isInFavorite === true ? false : true;
     // console.log(item.isInFavorite);
 
-    console.log("egageaeae", item.id);
-
     const existEl = favorites.find((el) => el.id === item.id);
     if (existEl) {
       dispatch(deleteFavorites(item.id));
@@ -85,14 +83,14 @@ const TourListItem = ({ item }) => {
         <CardContent sx={{ width: "100%" }}>
           <FlexBetween direction="row">
             <Typography component="div" variant="h5">
-              {item.hotelsName}
+              {item.city || item.hotelsName}
             </Typography>
             <Typography
               variant="subtitle1"
               color="text.secondary"
               component="div"
             >
-              $ {item.price}
+              ₼ {item.price}
             </Typography>
           </FlexBetween>
           <Typography
@@ -116,7 +114,7 @@ const TourListItem = ({ item }) => {
           >
             {item.rating}
           </Typography> */}
-          <RatingComponent>{item.rating}</RatingComponent>
+          {item.rating && <RatingComponent>{item.rating}</RatingComponent>}
         </CardContent>
         <Divider
           sx={{
