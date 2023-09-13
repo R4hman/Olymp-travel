@@ -1,5 +1,6 @@
 import { configureStore } from "@reduxjs/toolkit";
 import { tourReducer } from "./slices/tourSlice";
+import { hotelReducer } from "./slices/hotelSlice";
 import { favoriteReducer } from "./slices/favoritesSlice";
 import { userReducer } from "./slices/userSlice";
 import storage from "redux-persist/lib/storage";
@@ -11,13 +12,14 @@ const persistConfig = {
   key: "favorite",
   version: 1,
   storage,
-  blacklist: ["user", "tour"],
+  blacklist: ["user", "tour", "hotel"],
 };
 
 const reducer = combineReducers({
   tour: tourReducer,
   favorite: favoriteReducer,
   user: userReducer,
+  hotel: hotelReducer,
 });
 
 const persistedReducer = persistReducer(persistConfig, reducer);
