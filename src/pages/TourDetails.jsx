@@ -37,13 +37,10 @@ const navLinkStyle = () => {
 const TourDetails = () => {
   const params = useParams();
   const { tourId } = params;
-  console.log("params: ", params);
 
   const { data, isLoading, error } = useFetch(
-    `http://localhost:3000/hotels/${tourId}`
+    `http://localhost:3000/tours/${tourId}`
   );
-  console.log("gelmeyen", data);
-  console.log("id", tourId);
   return (
     <Box>
       <Navbar isHomePage={false} />
@@ -108,10 +105,9 @@ const TourDetails = () => {
                     textAlign: "left",
                   }}
                 >
-                  {data.hotelsName}
+                  {data.city + "  Turu"}
                 </Typography>
               </Box>
-              <RatingComponent>{data.rating}</RatingComponent>
             </Stack>
             <Stack spacing={2}>
               <Typography
@@ -126,7 +122,7 @@ const TourDetails = () => {
                   textAlign: "right",
                 }}
               >
-                $ {data.price}
+                ₼ {data.price}
               </Typography>
               <Box
                 sx={{
