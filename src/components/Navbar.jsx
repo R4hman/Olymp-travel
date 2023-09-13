@@ -53,7 +53,7 @@ const Navbar = ({ isHomePage }) => {
               <Typography variant="subtitle1">Turlar</Typography>
             </Box>
           </NavLink>
-          <NavLink to="/" style={navLinkStyle}>
+          <NavLink to="/otellər" style={navLinkStyle}>
             <Box sx={{ display: "flex", alignItems: "center", gap: "0.2rem" }}>
               <HotelIcon />
               <Typography variant="subtitle1">Otellər</Typography>
