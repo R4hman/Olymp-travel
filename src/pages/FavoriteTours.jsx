@@ -12,7 +12,6 @@ const FavoriteTours = () => {
   //   favorites.forEach((item) => fetch(`http://localhost:5173/hotels/${item}`));
   // }, []);
 
-  console.log("favorites", favorites);
   return (
     <Box>
       <Navbar />
