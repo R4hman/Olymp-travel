@@ -18,7 +18,7 @@ import { useNavigate } from "react-router-dom";
 import { State } from "country-state-city";
 import DateRangePicker from "./DateRangePicker";
 
-import { CustomContainer, theme } from "../theme";
+import { CustomContainer, FlexBetween, theme } from "../theme";
 import ReusableButton from "./ReusableButton";
 import { Link, NavLink, useSearchParams, useLocation } from "react-router-dom";
 import Navbar from "./Navbar";
@@ -26,12 +26,20 @@ import FormSelections from "./FormSelections";
 import { useSelector } from "react-redux";
 import { format } from "date-fns";
 
+const linkStyle = (isActive) => {
+  return {
+    color: "black",
+    textDecoration: "none",
+    display: "flex",
+    alignItems: "center",
+    gap: "0.5rem",
+  };
+};
+
 const Header = () => {
   const navigate = useNavigate();
   const [params, setSearchParams] = useSearchParams();
   const location = useLocation();
-
-  console.log(location);
 
   const timeRange = useSelector((store) => store.tour.timeRange);
   const selectedRegion = useSelector((store) => store.tour.city);
@@ -39,21 +47,19 @@ const Header = () => {
   const checkIn = format(timeRange[0].startDate, "dd-MM-yyyy");
   const checkOut = format(timeRange[0].endDate, "dd-MM-yyyy");
 
-  // console.log("sle", selectedRegion.split(" ")[0]);
-
   const handleNavigate = () => {
-    // if (!selectedRegion || !timeRange) return;
-    setSearchParams({
-      city: selectedRegion.split(" ")[0],
-      checkIn,
-      checkOut,
-    });
-
-    navigate(
-      `/turlar?city=${
-        selectedRegion.split(" ")[0]
-      }&checkIn=${checkIn}&checkOut=${checkOut}`
-    );
+    if (selectedRegion) {
+      setSearchParams({
+        city: selectedRegion?.split(" ")[0],
+        checkIn,
+        checkOut,
+      });
+      navigate(
+        `/turlar?city=${
+          selectedRegion.split(" ")[0]
+        }&checkIn=${checkIn}&checkOut=${checkOut}`
+      );
+    }
   };
 
   return (
@@ -134,22 +140,45 @@ const Header = () => {
           zIndex: 100,
         }}
       >
-        <Box
-          sx={{
-            borderRight: "1px solid grey",
-            display: "flex",
-            alignItems: "center",
-            gap: "0.3rem",
-            width: "100px",
-            fontSize: "16px",
-            fontWeight: "600",
-            lineHeight: "20px",
-            letterSpacing: "0em",
-            textAlign: "left",
-          }}
-        >
-          <FlightIcon />
-          <Typography variant="subtitle1">Turlar</Typography>
+        <Box sx={{ display: "flex", alignItems: "center" }}>
+          <Box
+            sx={{
+              borderRight: "1px solid grey",
+              display: "flex",
+              alignItems: "center",
+              gap: "0.3rem",
+              width: "100px",
+              fontSize: "16px",
+              fontWeight: "600",
+              lineHeight: "20px",
+              letterSpacing: "0em",
+              textAlign: "left",
+            }}
+          >
+            <NavLink style={linkStyle} to="/turlar">
+              <FlightIcon />
+              <Typography variant="subtitle1">Turlar</Typography>
+            </NavLink>
+          </Box>
+          <Box
+            sx={{
+              marginLeft: "1.8rem",
+              display: "flex",
+              alignItems: "center",
+              gap: "0.3rem",
+              width: "100px",
+              fontSize: "16px",
+              fontWeight: "600",
+              lineHeight: "20px",
+              letterSpacing: "0em",
+              textAlign: "left",
+            }}
+          >
+            <NavLink style={linkStyle} to="/otellər">
+              <HotelIcon />
+              <Typography variant="subtitle1">Otellər</Typography>
+            </NavLink>
+          </Box>
         </Box>
 
         <FormSelections />
