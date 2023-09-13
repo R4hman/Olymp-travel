@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Grid from "@mui/material/Grid";
 import List from "@mui/material/List";
 import ListItem from "@mui/material/ListItem";
@@ -13,9 +13,14 @@ function intersection(a, b) {
 export default function CheckListHotel({ data, checked, setChecked }) {
   const [left, setLeft] = useState(data);
 
-  const leftChecked = intersection(checked, left);
+  useEffect(() => {
+    setLeft(data);
+  }, [data]);
+
+  // const leftChecked = intersection(checked, left);
 
   const handleToggle = (value) => () => {
+    console.log("handleToggle", value);
     const currentIndex = checked.indexOf(value);
     const newChecked = [...checked];
 
@@ -29,19 +34,46 @@ export default function CheckListHotel({ data, checked, setChecked }) {
   };
 
   const customList = (items) => (
-    <List dense component="div" role="list">
+    <List
+      sx={{
+        width: "100%",
+        // maxWidth: 360,
+        bgcolor: "background.paper",
+        position: "relative",
+        overflow: "auto",
+        maxHeight: 300,
+        "& ul": { padding: 0 },
+      }}
+      dense
+      component="div"
+      role="list"
+    >
+      {console.log("icini sikdiyim items", items)}
       {items.map((value) => {
-        const labelId = `transfer-list-item-${value}-label`;
+        console.log("icini sikdiyim value", value);
+        let val;
+        if (value.country) {
+          val = value.country;
+        } else {
+          val = value;
+        }
+        // const val = value.country ? value?.country : value ? value : "q";
+
+        console.log("yeni value", val);
+        // console.log("value: abu " + value.country ? value.country : value);
+        const labelId = `transfer-list-item-${val}-label`;
 
         return (
           <ListItem
-            key={value + 77}
+            key={val}
             role="listitem"
             button
-            onClick={handleToggle(value)}
+            onClick={handleToggle(val)}
             sx={{
               "&.MuiListItem-root": {
                 padding: "0",
+                width: "100%",
+                // backgroundColor: "red",
               },
             }}
           >
@@ -53,7 +85,7 @@ export default function CheckListHotel({ data, checked, setChecked }) {
               }}
             >
               <Checkbox
-                checked={checked.indexOf(value) !== -1}
+                checked={checked.indexOf(val) !== -1}
                 tabIndex={-1}
                 disableRipple
                 inputProps={{
@@ -61,7 +93,7 @@ export default function CheckListHotel({ data, checked, setChecked }) {
                 }}
               />
             </ListItemIcon>
-            <ListItemText id={labelId} primary={`${value}`} />
+            <ListItemText id={labelId} primary={`${val}`} />
           </ListItem>
         );
       })}
@@ -76,6 +108,7 @@ export default function CheckListHotel({ data, checked, setChecked }) {
           "&.MuiGrid-root": {
             paddingLeft: "0",
             paddingTop: "0",
+            width: "100%",
           },
         }}
       >
