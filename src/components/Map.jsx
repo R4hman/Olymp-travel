@@ -3,18 +3,7 @@ import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 import { SectionTitle } from "../theme";
 
 const Map = ({ mapPosition }) => {
-  console.log("mapPosition", mapPosition?.lat);
   const lat = JSON.parse(mapPosition?.lat);
-  // console.log("parse lat", lat);
-  //   const position = [51.505, -0.09];
-  //   console.log(mapPosition.lat);
-  //   console.log(mapPosition.lng);
-  //   const { lat, lng } = mapPosition;
-  //   console.log("lat: " + lat);
-  //   console.log("lng: " + lng);
-  //   const p = [mapPosition?.lat];
-  //   console.log(p);
-  //   const position = [mapPosition.lat, mapPosition.lng];
 
   return (
     <Box sx={{ height: "100%" }}>
