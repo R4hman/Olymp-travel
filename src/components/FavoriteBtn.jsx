@@ -9,11 +9,7 @@ const FavoriteBtn = ({ favoriteClicked, onClick, id }) => {
   console.log("favoriteClicked", favoriteClicked);
 
   const favorites = useSelector((state) => state.favorite.favorites);
-  // console.log("favorites", favorites);
   const isClicked = favorites.find((favorite) => favorite.id === id);
-  // console.log("isClicked", isClicked?.internet);
-  // console.log("isClicked 2", isClicked?.isInFavorite);
-  // console.log("isClicked", isClicked);
 
   return (
     <IconButton
