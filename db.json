@@ -975,6 +975,7 @@
       "isInFavorite": false,
       "price": 3000,
       "date": "05-04-2023",
+      "month": "aprel",
       "pictureURL": ["/public/assets/istanbulHotelPhoto3.png"],
 
       "reviews": [
@@ -1004,7 +1005,8 @@
       },
       "isInFavorite": false,
       "price": 3000,
-      "date": "05-04-2023",
+      "date": "05-05-2023",
+      "month": "may",
       "pictureURL": ["/public/assets/istanbulHotelPhoto3.png"],
 
       "reviews": [
@@ -1034,7 +1036,8 @@
       },
       "isInFavorite": false,
       "price": 3000,
-      "date": "05-04-2023",
+      "date": "05-12-2023",
+      "month": "dekabr",
       "pictureURL": ["/public/assets/istanbulHotelPhoto3.png"],
 
       "reviews": [
@@ -1064,7 +1067,8 @@
       },
       "isInFavorite": false,
       "price": 3000,
-      "date": "05-04-2023",
+      "date": "05-11-2023",
+      "month": "noyabr",
       "pictureURL": ["/public/assets/istanbulHotelPhoto3.png"],
 
       "reviews": [
@@ -1094,7 +1098,8 @@
       },
       "isInFavorite": false,
       "price": 3000,
-      "date": "05-04-2023",
+      "date": "05-10-2023",
+      "month": "oktyabr",
       "pictureURL": ["/public/assets/istanbulHotelPhoto3.png"],
 
       "reviews": [
