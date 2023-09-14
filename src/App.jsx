@@ -21,6 +21,8 @@ import ProtectedRoute from "./components/ProtectedRoute";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import Hotels from "./pages/Hotels";
 import HotelDetails from "./pages/HotelDetails";
+import HotelTest from "./pages/HotelTest";
+import HotelDetailTest from "./pages/HotelDetailTest";
 
 const months = [
   "yanvar",
@@ -103,8 +105,10 @@ function App() {
             element={<Tours months={months} typeOfTours={typeOfTours} />}
           />
           <Route path="/turlar/:tourId" element={<TourDetails />} />
-          <Route path="/otellər" element={<Hotels />} />
-          <Route path="/otellər/:hotelId" element={<HotelDetails />} />
+          <Route path="/otellər" element={<HotelTest />} />
+          <Route path="/otellər/:hotelId" element={<HotelDetailTest />} />
+          {/* <Route path="/otellər" element={<Hotels />} />
+          <Route path="/otellər/:hotelId" element={<HotelDetails />} /> */}
           <Route path="/login" element={<Login />} />
           <Route path="/account" element={<Profile />} />
           <Route path="/seçdiklərim" element={<FavoriteTours />} />

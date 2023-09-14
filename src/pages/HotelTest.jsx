@@ -6,115 +6,88 @@ import useFetch from "../useFetch";
 import Navbar from "../components/Navbar";
 import FormSelections from "../components/FormSelections";
 import { CustomContainer, theme } from "../theme";
+import format from "date-fns/format";
 import ReusableButton from "../components/ReusableButton";
 import SearchIcon from "@mui/icons-material/Search";
-import { useDispatch, useSelector } from "react-redux";
+import { useSelector } from "react-redux";
 import { setTime } from "../store/slices/tourSlice";
 import { useLocation, useSearchParams } from "react-router-dom";
 import { toast } from "react-hot-toast";
+import HotelListing from "../components/HotelListing";
 
-const Tours = ({ months, typeOfTours }) => {
+const HotelTest = () => {
   const [data, setData] = useState([]);
+  const [searchedList, setSearchedList] = useState([]);
   const [priceValue, setPriceValue] = useState([100, 3000]);
+  const [rating, setRating] = useState(1);
   const [checked, setChecked] = useState([]);
-  const [country, setCountry] = useState(null);
-  const [city, setCity] = useState(null);
-  const [month, setMonth] = useState(null);
-  // const [time, setTime] = useState(null);
-
-  const dispatch = useDispatch();
 
   const [searchParams, setSearchParams] = useSearchParams();
 
-  // const selectedRegion = useSelector((store) => store.tour.city);
-  const tourType = useSelector((store) => store.tour.type);
+  const timeRange = useSelector((store) => store.hotel.timeRange);
+
+  const time = format(timeRange[0].startDate, "dd-MM-yyyy");
+  const selectedRegion = useSelector((store) => store.hotel.city);
+  // console.log("range", format(range[0].startDate, "MM/dd/yyyy"));
 
   let additionalParams = "";
   let url;
-
-  console.log("month", month);
-
-  const currMonth = searchParams.get("month")
-    ? searchParams.get("month")
-    : month;
-
-  console.log("currMonth: " + currMonth);
-  console.log("Tour type: ", tourType);
 
   if (checked.length > 0) {
     checked.forEach(
       (txt) =>
         (additionalParams +=
-          "&" + txt?.toLowerCase()?.split(" ").join("") + "=true")
+          "&" + txt.toLowerCase().split(" ").join("") + "=true")
     );
     console.log("additionalParams", additionalParams);
   }
 
-  url = `http://localhost:3000/tours?country=${country}&city=${city}&price_gte=${priceValue[0]}&price_lte=${priceValue[1]}&month=${currMonth}&type=${tourType}`;
-  // url = `http://localhost:3000/tours?price_gte=${priceValue[0]}&price_lte=${priceValue[1]}&month=${currMonth}&q=${selectedRegion}${additionalParams}`;
+  // time varsa url-de date olacaq, yoxsa olmayacaq
+  if (time !== "") {
+    url = `http://localhost:3000/hotels?price_gte=${priceValue[0]}&price_lte=${priceValue[1]}&rating_gte=${rating}&date=${time}&q=${selectedRegion}${additionalParams}`;
+  } else {
+    url = `http://localhost:3000/hotels?price_gte=${priceValue[0]}&price_lte=${priceValue[1]}&rating_gte=${rating}&q=${selectedRegion}${additionalParams}`;
+  }
+
+  const checkIn = searchParams.get("checkIn");
 
   // TODO:
 
-  // const checkOut = searchParams.get("checkOut");
+  const checkOut = searchParams.get("checkOut");
 
   const initialCity = searchParams.get("city");
 
   let initialUrl =
-    currMonth && initialCity
-      ? `http://localhost:3000/tours?month=${currMonth}&q=${initialCity}`
-      : "http://localhost:3000/tours";
+    checkIn && initialCity
+      ? `http://localhost:3000/hotels?date=${checkIn}&q=${initialCity}`
+      : "http://localhost:3000/hotels";
 
   const { error, isLoading, data: firstData, refetch } = useFetch(initialUrl);
 
   function handleSearchList() {
-    setSearchParams({
-      // date: time,
-      month: currMonth ? currMonth : month,
-      country: country && country,
-      city: city && city,
-      minPrice: priceValue[0] && priceValue[0],
-      maxPrice: priceValue[1] && priceValue[1],
-      q: tourType,
-
-      // checked: additionalParams && additionalParams,
-    });
+    setSearchParams({ date: time, city: selectedRegion });
     refetch(url);
   }
 
   const handleClearFilter = () => {
-    // const date = searchParams.get("date");
-    const month = searchParams.get("month");
+    const date = searchParams.get("date");
     const city = searchParams.get("city");
-    const country = searchParams.get("country");
     const checkIn = searchParams.get("checkIn");
     const checkOut = searchParams.get("checkOut");
-    const minPrice = searchParams.get("minPrice");
-    const maxPrice = searchParams.get("maxPrice");
-    const checked = searchParams.get("checked");
 
-    // date && searchParams.delete("date");
-    month && searchParams.delete("month");
-    country && searchParams.delete("country");
+    date && searchParams.delete("date");
     checkOut && searchParams.delete("checkOut");
     checkIn && searchParams.delete("checkIn");
     city && searchParams.delete("city");
-    minPrice && searchParams.delete("minPrice");
-    maxPrice && searchParams.delete("maxPrice");
-    checked && searchParams.delete("checked");
-
     toast.success("Filter təmizləndi");
 
-    url = "http://localhost:3000/tours";
+    url = "http://localhost:3000/hotels";
     refetch(url);
     setData([]);
-    setChecked([]);
-    setCountry(null);
-    // setTime(false);
-    dispatch(setTime(null));
-    setMonth(null);
-    setPriceValue([100, 3000]);
     setSearchParams(searchParams);
   };
+
+  console.log("zooa0", firstData);
 
   return (
     <Box>
@@ -133,11 +106,7 @@ const Tours = ({ months, typeOfTours }) => {
           justifyContent: "center",
         }}
       >
-        <FormSelections
-          months={months}
-          forType="tour"
-          typeOfTours={typeOfTours}
-        />
+        <FormSelections />
         <ReusableButton
           onClick={handleSearchList}
           bgColor={theme.palette.primary.main}
@@ -145,18 +114,16 @@ const Tours = ({ months, typeOfTours }) => {
           <SearchIcon />
         </ReusableButton>
       </Box>
-      <TourListing
-        months={months}
+      <HotelListing
+        searchedList={searchedList}
+        setSearchedList={setSearchedList}
         priceValue={priceValue}
         setPriceValue={setPriceValue}
+        rating={rating}
+        setRating={setRating}
         checked={checked}
         setChecked={setChecked}
-        country={country}
-        setCountry={setCountry}
-        city={city}
-        setCity={setCity}
         data={firstData}
-        setMonth={setMonth}
         // data={data.length > 0 ? data : firstData}
         isLoading={isLoading}
         error={error}
@@ -166,4 +133,4 @@ const Tours = ({ months, typeOfTours }) => {
   );
 };
 
-export default Tours;
+export default HotelTest;

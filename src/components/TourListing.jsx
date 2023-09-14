@@ -1,4 +1,15 @@
-import { Grid, Typography, Stack, Divider, Box } from "@mui/material";
+import {
+  Grid,
+  Typography,
+  Stack,
+  Divider,
+  Box,
+  ListItemIcon,
+  Checkbox,
+  ListItemText,
+  ListItem,
+  List,
+} from "@mui/material";
 import Filters from "./Filters";
 import CheckListHotel from "./CheckListHotel";
 import { CustomContainer, FlexBetween } from "../theme";
@@ -287,13 +298,28 @@ const TourListing = ({
     setNext(next + postsPerPage);
   };
 
+  const handleMonthToggle = (value) => () => {
+    console.log("handleToggle", value);
+    setMonth(value);
+    const currentIndex = checked.indexOf(value);
+    const newChecked = [...checked];
+
+    if (currentIndex === -1) {
+      newChecked.push(value);
+    } else {
+      newChecked.splice(currentIndex, 1);
+    }
+
+    setChecked(newChecked);
+  };
+
   return (
     <CustomContainer>
       <Grid container columns={12} spacing={2}>
         <Grid item xs={3}>
           <Filters priceValue={priceValue} setPriceValue={setPriceValue} />
           <Stack sx={{ pt: "0.5rem " }}>
-            <FlexBetween sx={{ pb: "0.5rem" }}>
+            <FlexBetween sx={{ pb: "0.5rem 0", mb: "1rem" }}>
               <Typography variant="subtitle1">Ölkə</Typography>
               <KeyboardArrowDown />
             </FlexBetween>
@@ -312,7 +338,7 @@ const TourListing = ({
           <Divider />
 
           <Stack>
-            <FlexBetween sx={{ padding: "0.5rem  0" }}>
+            <FlexBetween sx={{ padding: "0.5rem  0", mb: "1rem" }}>
               <Typography variant="subtitle1">Şəhər</Typography>
               <KeyboardArrowDown />
             </FlexBetween>
@@ -330,8 +356,85 @@ const TourListing = ({
               }}
             />
           </Stack>
+          <Stack sx={{ mb: "1rem" }}>
+            <FlexBetween sx={{ padding: "0.5rem  0", mb: "1rem" }}>
+              <Typography variant="subtitle1">Ay</Typography>
+              <KeyboardArrowDown />
+            </FlexBetween>
 
-          <Stack>
+            <Grid
+              container
+              spacing={2}
+              justifyContent="flex-start"
+              alignItems="center"
+            >
+              <Grid
+                item
+                sx={{
+                  "&.MuiGrid-root": {
+                    paddingLeft: "0",
+                    paddingTop: "0",
+                    width: "100%",
+                  },
+                }}
+              >
+                <List
+                  sx={{
+                    width: "100%",
+                    // maxWidth: 360,
+                    bgcolor: "background.paper",
+                    position: "relative",
+                    overflow: "auto",
+                    maxHeight: 300,
+                    "& ul": { padding: 0 },
+                  }}
+                  dense
+                  component="div"
+                  role="list"
+                >
+                  {months.map((value) => {
+                    const labelId = `transfer-list-item-${value}-label`;
+
+                    return (
+                      <ListItem
+                        key={value}
+                        role="listitem"
+                        button
+                        onClick={handleMonthToggle(value)}
+                        sx={{
+                          "&.MuiListItem-root": {
+                            padding: "0",
+                            width: "100%",
+                            // backgroundColor: "red",
+                          },
+                        }}
+                      >
+                        <ListItemIcon
+                          sx={{
+                            "&.MuiListItemIcon-root": {
+                              minWidth: "42px",
+                            },
+                          }}
+                        >
+                          <Checkbox
+                            checked={checked.indexOf(value) !== -1}
+                            tabIndex={-1}
+                            disableRipple
+                            inputProps={{
+                              "aria-labelledby": labelId,
+                            }}
+                          />
+                        </ListItemIcon>
+                        <ListItemText id={labelId} primary={`${value}`} />
+                      </ListItem>
+                    );
+                  })}
+                </List>
+              </Grid>
+            </Grid>
+          </Stack>
+
+          {/* <Stack>
             <FlexBetween sx={{ padding: "0.5rem  0" }}>
               <Typography variant="subtitle1">Ay</Typography>
               <KeyboardArrowDown />
@@ -345,7 +448,7 @@ const TourListing = ({
                 justifyContent: "flex-start",
               }}
             />
-          </Stack>
+          </Stack> */}
         </Grid>
 
         <Grid
