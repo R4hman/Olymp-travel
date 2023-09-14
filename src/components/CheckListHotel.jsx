@@ -10,7 +10,15 @@ function intersection(a, b) {
   return a.filter((value) => b.indexOf(value) !== -1);
 }
 
-export default function CheckListHotel({ data, checked, setChecked }) {
+export default function CheckListHotel({
+  data,
+  checked,
+  setChecked,
+  country = null,
+  setCountry,
+  city,
+  setCity,
+}) {
   const [left, setLeft] = useState(data);
 
   useEffect(() => {
@@ -20,7 +28,10 @@ export default function CheckListHotel({ data, checked, setChecked }) {
   // const leftChecked = intersection(checked, left);
 
   const handleToggle = (value) => () => {
+    const cntry = data.filter((d) => d.country?.includes(value));
+    console.log("cntry", cntry);
     console.log("handleToggle", value);
+    cntry.length > 0 ? setCountry(value) : setCity(value);
     const currentIndex = checked.indexOf(value);
     const newChecked = [...checked];
 
@@ -48,19 +59,9 @@ export default function CheckListHotel({ data, checked, setChecked }) {
       component="div"
       role="list"
     >
-      {console.log("icini sikdiyim items", items)}
       {items.map((value) => {
-        console.log("icini sikdiyim value", value);
-        let val;
-        if (value.country) {
-          val = value.country;
-        } else {
-          val = value;
-        }
-        // const val = value.country ? value?.country : value ? value : "q";
+        const val = value.country ? value?.country : value;
 
-        console.log("yeni value", val);
-        // console.log("value: abu " + value.country ? value.country : value);
         const labelId = `transfer-list-item-${val}-label`;
 
         return (
