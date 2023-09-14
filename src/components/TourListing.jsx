@@ -185,31 +185,31 @@ const countries = [
   },
 ];
 
-const typeOfTour = [
-  "8 Mart",
-  "Ailəvi turlar",
-  "Bal ayı turları",
-  "Ekstrim turları",
-  "Erkən rezervasiya turları",
-  "Gənclər üçün turlar",
-  "Halal turlar",
-  "Konsertlər ",
-  "Kruiz turları",
-  "Lüks turlar",
-  "Müalicəvi turlar",
-  "Novruz turları",
-  "Qrup turları",
-  "Ramazan turları",
-  "Serial turları",
-  "Sevgililər günü",
-  "Səyahət turları",
-  "Viza tələb olunmayan turlar",
-  "Xaricilər üçün ekskursiyalar",
-  "Yay turları",
-  "Yeni il turları",
-  "Çimərlik turları",
-  "Əyləncəli turlar",
-];
+// const typeOfTour = [
+//   "8 Mart",
+//   "Ailəvi turlar",
+//   "Bal ayı turları",
+//   "Ekstrim turları",
+//   "Erkən rezervasiya turları",
+//   "Gənclər üçün turlar",
+//   "Halal turlar",
+//   "Konsertlər ",
+//   "Kruiz turları",
+//   "Lüks turlar",
+//   "Müalicəvi turlar",
+//   "Novruz turları",
+//   "Qrup turları",
+//   "Ramazan turları",
+//   "Serial turları",
+//   "Sevgililər günü",
+//   "Səyahət turları",
+//   "Viza tələb olunmayan turlar",
+//   "Xaricilər üçün ekskursiyalar",
+//   "Yay turları",
+//   "Yeni il turları",
+//   "Çimərlik turları",
+//   "Əyləncəli turlar",
+// ];
 
 let cities = [
   "Sao Paolo",
@@ -224,28 +224,18 @@ let cities = [
   "Pennsylvania",
 ];
 
-const months = [
-  "Yanvar",
-  "Fevral",
-  "Mart",
-  "Aprel",
-  "May",
-  "İyun",
-  "İyul",
-  "Avqust",
-  "Sentyabr",
-  "Oktyabr",
-  "Noyabr",
-  "Dekabr",
-];
-
 const postsPerPage = 3;
 let arrayForHoldingPosts = [];
 
 const TourListing = ({
   priceValue,
   setPriceValue,
-
+  city,
+  setCity,
+  country,
+  setCountry,
+  setMonth,
+  months,
   setChecked,
   checked,
   data,
@@ -270,10 +260,6 @@ const TourListing = ({
     return country.country === checked[checked.length - 1];
   })[0]?.cities;
 
-  console.log("icini sikdiyim cities", cities);
-  console.log("icini sikdiyim checked", checked);
-  console.log("icini sikdiyim cityToShw", cityToShow);
-  console.log("typeof cityToShow:  " + Array.isArray(cityToShow));
   // cityToShow.map((c) => console.log("cityToShow: " + c + "b"));
 
   // console.log("checked", cityToShow);
@@ -314,6 +300,8 @@ const TourListing = ({
             <CheckListHotel
               checked={checked}
               setChecked={setChecked}
+              country={country}
+              setCountry={setCountry}
               data={countries}
               sx={{
                 display: "flex",
@@ -331,33 +319,21 @@ const TourListing = ({
             <CheckListHotel
               checked={checked}
               setChecked={setChecked}
+              country={country}
+              setCountry={setCountry}
+              city={city}
+              setCity={setCity}
               data={!cityToShow ? cities : cityToShow}
-              // data={amenities}
-              // data={cities}
               sx={{
                 display: "flex",
                 justifyContent: "flex-start",
               }}
             />
           </Stack>
+
           <Stack>
             <FlexBetween sx={{ padding: "0.5rem  0" }}>
-              <Typography variant="subtitle1">Turun növü</Typography>
-              <KeyboardArrowDown />
-            </FlexBetween>
-            <CheckListHotel
-              checked={checked}
-              setChecked={setChecked}
-              data={typeOfTour}
-              sx={{
-                display: "flex",
-                justifyContent: "flex-start",
-              }}
-            />
-          </Stack>
-          <Stack>
-            <FlexBetween sx={{ padding: "0.5rem  0" }}>
-              <Typography variant="subtitle1">Turun növü</Typography>
+              <Typography variant="subtitle1">Ay</Typography>
               <KeyboardArrowDown />
             </FlexBetween>
             <CheckListHotel

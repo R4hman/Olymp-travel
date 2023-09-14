@@ -5,10 +5,10 @@ import Footer from "../components/Footer";
 import ShowCard from "../components/ShowCard";
 import Reviews from "../components/Reviews";
 
-const Home = () => {
+const Home = ({ months, typeOfTours }) => {
   return (
     <Box>
-      <Header />
+      <Header months={months} typeOfTours={typeOfTours} />
       <ShowCard />
       <Reviews />
       <Footer />
