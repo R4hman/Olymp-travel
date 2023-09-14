@@ -36,29 +36,28 @@ const linkStyle = (isActive) => {
   };
 };
 
-const Header = () => {
+const Header = ({ months, typeOfTours }) => {
   const navigate = useNavigate();
   const [params, setSearchParams] = useSearchParams();
   const location = useLocation();
 
   const timeRange = useSelector((store) => store.tour.timeRange);
-  const selectedRegion = useSelector((store) => store.tour.city);
+  const selectedTourType = useSelector((store) => store.tour.type);
 
-  const checkIn = format(timeRange[0].startDate, "dd-MM-yyyy");
-  const checkOut = format(timeRange[0].endDate, "dd-MM-yyyy");
+  // const checkIn = format(timeRange[0].startDate, "dd-MM-yyyy");
+  // const checkOut = format(timeRange[0].endDate, "dd-MM-yyyy");
+  const month = timeRange;
+  console.log("select tour type", selectedTourType);
 
   const handleNavigate = () => {
-    if (selectedRegion) {
+    console.log("cliclendi");
+    if (selectedTourType) {
       setSearchParams({
-        city: selectedRegion?.split(" ")[0],
-        checkIn,
-        checkOut,
+        // city: selectedTourType?.split(" ")[0],
+        type: selectedTourType,
+        month,
       });
-      navigate(
-        `/turlar?city=${
-          selectedRegion.split(" ")[0]
-        }&checkIn=${checkIn}&checkOut=${checkOut}`
-      );
+      navigate(`/turlar?type=${selectedTourType}&month=${month}`);
     }
   };
 
@@ -181,7 +180,12 @@ const Header = () => {
           </Box>
         </Box>
 
-        <FormSelections />
+        <FormSelections
+          months={months}
+          forType="tour"
+          typeOfTours={typeOfTours}
+          showSelectComponent
+        />
         <Box sx={{ display: "flex", justifyContent: "flex-end", mt: "2rem" }}>
           <ReusableButton
             bgColor={theme.palette.primary.main}
