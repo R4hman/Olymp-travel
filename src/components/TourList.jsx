@@ -8,7 +8,6 @@ import ReusableButton from "./ReusableButton";
 import SortByPrice from "./SortByPrice";
 
 const TourList = ({ data, isLoading, error, length, handleClearFilter }) => {
-  console.log("data is", data);
   return (
     <Box sx={{ width: "800px", height: "auto" }}>
       <FlexBetween sx={{ mb: "1rem" }}>
