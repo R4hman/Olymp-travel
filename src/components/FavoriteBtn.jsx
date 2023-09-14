@@ -6,8 +6,6 @@ import { theme } from "../theme";
 import { useSelector } from "react-redux";
 
 const FavoriteBtn = ({ favoriteClicked, onClick, id }) => {
-  console.log("favoriteClicked", favoriteClicked);
-
   const favorites = useSelector((state) => state.favorite.favorites);
   const isClicked = favorites.find((favorite) => favorite.id === id);
 

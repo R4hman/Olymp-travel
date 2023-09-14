@@ -10,19 +10,25 @@ import {
 
 import DateRangePicker from "./DateRangePicker";
 import { State } from "country-state-city";
-import { setCity } from "../store/slices/tourSlice";
+import { setType } from "../store/slices/tourSlice";
 import { setCity as HotelCity } from "../store/slices/hotelSlice";
 import { useEffect } from "react";
 import { useSearchParams } from "react-router-dom";
 import { format } from "date-fns";
+import SelectComponent from "./SelectComponent";
 
-const FormSelections = ({ forType }) => {
+const FormSelections = ({
+  forType,
+  months,
+  showSelectComponent,
+  typeOfTours,
+}) => {
   const [params, setSearchParams] = useSearchParams();
   const dispatch = useDispatch();
 
-  const selectedRegion = useSelector((store) =>
-    forType === "tour" ? store.tour.city : store.hotel.city
-  );
+  const selected = useSelector((store) => {
+    return forType === "tour" ? store.tour.type : store.hotel.city;
+  });
 
   return (
     <Box
@@ -42,28 +48,34 @@ const FormSelections = ({ forType }) => {
         },
       }}
     >
-      {forType !== "tour" && <DateRangePicker />}
+      {/* {forType !== "tour" && <DateRangePicker />} */}
+      {showSelectComponent && <SelectComponent list={months} />}
 
       <FormControl sx={{ m: 1, width: 300 }}>
-        <InputLabel id="demo-multiple-name-label">Name</InputLabel>
         <Select
-          labelId="demo-multiple-name-label"
-          id="demo-multiple-name"
-          value={selectedRegion}
+          displayEmpty
+          inputProps={{ "aria-label": "Without label" }}
+          value={selected}
           onChange={(e) =>
             dispatch(
               forType === "tour"
-                ? setCity(e.target.value)
+                ? setType(e.target.value)
                 : HotelCity(e.target.value)
             )
           }
-          input={<OutlinedInput label="Name" />}
         >
-          {State.getStatesOfCountry("AZ").map((state, idx) => (
-            <MenuItem value={state.name} key={idx}>
-              {state.name}
-            </MenuItem>
-          ))}
+          {!typeOfTours &&
+            State.getStatesOfCountry("AZ").map((state, idx) => (
+              <MenuItem value={state.name} key={idx}>
+                {state.name}
+              </MenuItem>
+            ))}
+          {typeOfTours &&
+            typeOfTours.map((state, idx) => (
+              <MenuItem value={state} key={idx}>
+                {state}
+              </MenuItem>
+            ))}
         </Select>
         {/* <Box sx={{ backgroundColor: "red" }}>
           {timeRange[0].startDate.toDateString()}
