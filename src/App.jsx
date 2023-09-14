@@ -22,13 +22,52 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import Hotels from "./pages/Hotels";
 import HotelDetails from "./pages/HotelDetails";
 
+const months = [
+  "yanvar",
+  "fevral",
+  "mart",
+  "aprel",
+  "may",
+  "iyun",
+  "iyul",
+  "avqust",
+  "sentyabr",
+  "oktyabr",
+  "noyabr",
+  "dekabr",
+];
+const typeOfTours = [
+  "8 Mart",
+  "Ailəvi turlar",
+  "Bal ayı turları",
+  "Ekstrim turları",
+  "Erkən rezervasiya turları",
+  "Gənclər üçün turlar",
+  "Halal turlar",
+  "Konsertlər ",
+  "Kruiz turları",
+  "Lüks turlar",
+  "Müalicəvi turlar",
+  "Novruz turları",
+  "Qrup turları",
+  "Ramazan turları",
+  "Serial turları",
+  "Sevgililər günü",
+  "Səyahət turları",
+  "Viza tələb olunmayan turlar",
+  "Xaricilər üçün ekskursiyalar",
+  "Yay turları",
+  "Yeni il turları",
+  "Çimərlik turları",
+  "Əyləncəli turlar",
+];
+
 // BUNU SADƏCƏ TEST ÜÇÜN YAZIRAM XIRDA BİR DƏYİŞİKLİK BELƏ OLSA GİTHUB EXTENTİON BUNU FAYLDA DƏYİŞİKLİK OLMUŞ KİMİ
 // QƏBUL EDİR. SAVE EDİRƏM VƏ..
 // İNDİ COMMİT EDİB PUSH EDƏCƏM
 
 function App() {
   const [selectedRegion, setSelectedRegion] = useState("");
-  console.log("selected region", selectedRegion);
 
   const handleChange = (e) => {
     setSelectedRegion(e.target.value);
@@ -55,8 +94,14 @@ function App() {
       <Box backgroundColor={theme.palette.primary.body}>
         <CssBaseline />
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/turlar" element={<Tours />} />
+          <Route
+            path="/"
+            element={<Home months={months} typeOfTours={typeOfTours} />}
+          />
+          <Route
+            path="/turlar"
+            element={<Tours months={months} typeOfTours={typeOfTours} />}
+          />
           <Route path="/turlar/:tourId" element={<TourDetails />} />
           <Route path="/otellər" element={<Hotels />} />
           <Route path="/otellər/:hotelId" element={<HotelDetails />} />
