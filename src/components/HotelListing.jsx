@@ -27,17 +27,18 @@ const HotelListing = ({
   setSearchedList,
   priceValue,
   setPriceValue,
-  rating,
-  setRating,
   setChecked,
   checked,
   data,
   isLoading,
   error,
   handleClearFilter,
+  handleSortChange,
+  sort,
+  next,
+  setNext,
 }) => {
   const [postsToShow, setPostsToShow] = useState([]);
-  const [next, setNext] = useState(3);
 
   const theme = useTheme();
 
@@ -50,6 +51,8 @@ const HotelListing = ({
     // setPostsToShow(arrayForHoldingPosts);
     setPostsToShow(slicedPosts);
   };
+
+  console.log("next", next);
 
   console.log("post to show", postsToShow);
 
@@ -71,12 +74,7 @@ const HotelListing = ({
     <CustomContainer>
       <Grid container columns={12} spacing={2}>
         <Grid item xs={3}>
-          <Filters
-            priceValue={priceValue}
-            setPriceValue={setPriceValue}
-            rating={rating}
-            setRating={setRating}
-          />
+          <Filters priceValue={priceValue} setPriceValue={setPriceValue} />
           <Stack sx={{ pt: "0.5rem " }}>
             <FlexBetween sx={{ pb: "0.5rem" }}>
               <Typography variant="subtitle1">Freebies</Typography>
@@ -129,6 +127,8 @@ const HotelListing = ({
               isLoading={isLoading}
               error={error}
               handleClearFilter={handleClearFilter}
+              handleSortChange={handleSortChange}
+              sort={sort}
             />
             {postsToShow.length > 0 && !data.length && (
               <ReusableButton
@@ -141,7 +141,7 @@ const HotelListing = ({
                 Show more tours
               </ReusableButton>
             )}
-            {data.length > 0 && (
+            {data.length > 3 && next < data.length && (
               <ReusableButton
                 onClick={handleShowMorePosts}
                 bgColor="black"
