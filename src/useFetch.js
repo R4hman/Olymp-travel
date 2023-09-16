@@ -21,7 +21,7 @@ const useFetch = (url) => {
   }, [url]);
 
   const refetch = async (url2) => {
-    console.log(url);
+    console.log("refetch url", url2);
     setIsLoading(true);
     try {
       const response = await fetch(url2);

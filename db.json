@@ -763,7 +763,7 @@
       ]
     },
     {
-      "id": 165,
+      "id": 184,
       "hotelsName": "Amsterdam",
       "position": {
         "lat": 52.377956,
@@ -806,7 +806,7 @@
       ]
     },
     {
-      "id": 165,
+      "id": 1627,
       "hotelsName": "Amsterdam",
       "position": {
         "lat": 52.377956,
@@ -851,7 +851,7 @@
       ]
     },
     {
-      "id": 258,
+      "id": 2589,
       "hotelsName": "Amsterdam",
       "position": {
         "lat": 52.377956,
@@ -895,7 +895,7 @@
       ]
     },
     {
-      "id": 487,
+      "id": 4877,
       "overview": " Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit nobis cum esse vero eveniet quisquam ratione temporibus cumque praesentium similique distinctio recusandae quas quod, rerum ab asperiores possimus iste assumenda!",
       "hotelsName": "Amsterdam",
       "position": {
@@ -939,26 +939,48 @@
       ]
     },
     {
-      "hotelsName": "Rahman",
-      "price": "15",
-      "date": "27-05-2023",
-      "position": "Quba",
-      "overview": "quba",
+      "id": 487877,
+      "overview": " Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit nobis cum esse vero eveniet quisquam ratione temporibus cumque praesentium similique distinctio recusandae quas quod, rerum ab asperiores possimus iste assumenda!",
+      "hotelsName": "Amsterdam",
+      "position": {
+        "lat": 52.377956,
+        "lng": 4.89707
+      },
+      "isInFavorite": false,
+      "price": 3000,
+      "date": "22-10-2023",
+      "rating": 3.7,
       "pictureURL": [
-        {
-          "path": "Rectangle 51.png"
-        },
-        {
-          "path": "testimonial-user-cover-24.png"
-        },
-        {
-          "path": "image 1.png"
-        },
-        {
-          "path": "image 3.png"
-        }
+        "https://i.imgur.com/1Nvq8gs.png",
+        "https://picsum.photos/id/247/300/300",
+        "https://picsum.photos/id/32/300/300",
+        "https://picsum.photos/id/126/300/300",
+        "https://picsum.photos/id/297/300/300",
+        "https://picsum.photos/id/567/300/300",
+        "https://picsum.photos/id/133/300/300",
+        "https://picsum.photos/id/412/300/300",
+        "https://picsum.photos/id/135/300/300"
       ],
-      "id": 9552
+      "breakfast": false,
+      "parking": true,
+      "internet": true,
+      "fitness": true,
+      "pool": true,
+      "air-condition": true,
+      "reviews": [
+        {
+          "name": "John",
+          "text": "It was such a good city to visit. I enjoyed it"
+        },
+        {
+          "name": "Peter",
+          "text": "It was such a good city to visit. I enjoyed it"
+        },
+        {
+          "name": "Ksenia ",
+          "text": "It was such a good city to visit. I enjoyed it"
+        }
+      ]
     }
   ],
   "tours": [
@@ -977,7 +999,6 @@
       "date": "05-04-2023",
       "month": "aprel",
       "pictureURL": ["/public/assets/istanbulHotelPhoto3.png"],
-
       "reviews": [
         {
           "name": "John",
@@ -1008,7 +1029,6 @@
       "date": "05-05-2023",
       "month": "may",
       "pictureURL": ["/public/assets/istanbulHotelPhoto3.png"],
-
       "reviews": [
         {
           "name": "John",
@@ -1039,7 +1059,6 @@
       "date": "05-12-2023",
       "month": "dekabr",
       "pictureURL": ["/public/assets/istanbulHotelPhoto3.png"],
-
       "reviews": [
         {
           "name": "John",
@@ -1070,7 +1089,6 @@
       "date": "05-11-2023",
       "month": "noyabr",
       "pictureURL": ["/public/assets/istanbulHotelPhoto3.png"],
-
       "reviews": [
         {
           "name": "John",
@@ -1087,7 +1105,7 @@
       ]
     },
     {
-      "id": 323,
+      "id": 343,
       "overview": " Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit nobis cum esse vero eveniet quisquam ratione temporibus cumque praesentium similique distinctio recusandae quas quod, rerum ab asperiores possimus iste assumenda!",
       "city": "Ganja",
       "country": "Azerbaijan",
@@ -1101,7 +1119,6 @@
       "date": "05-11-2023",
       "month": "noyabr",
       "pictureURL": ["/public/assets/istanbulHotelPhoto3.png"],
-
       "reviews": [
         {
           "name": "John",
@@ -1118,7 +1135,7 @@
       ]
     },
     {
-      "id": 323,
+      "id": 896,
       "overview": " Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit nobis cum esse vero eveniet quisquam ratione temporibus cumque praesentium similique distinctio recusandae quas quod, rerum ab asperiores possimus iste assumenda!",
       "city": "Sevilya",
       "country": "İspaniya",
@@ -1132,7 +1149,6 @@
       "date": "05-11-2023",
       "month": "noyabr",
       "pictureURL": ["/public/assets/istanbulHotelPhoto3.png"],
-
       "reviews": [
         {
           "name": "John",
@@ -1149,7 +1165,7 @@
       ]
     },
     {
-      "id": 323,
+      "id": 369,
       "overview": " Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit nobis cum esse vero eveniet quisquam ratione temporibus cumque praesentium similique distinctio recusandae quas quod, rerum ab asperiores possimus iste assumenda!",
       "city": "Sevilya",
       "country": "İspaniya",
@@ -1159,11 +1175,10 @@
         "lng": 46.36056
       },
       "isInFavorite": false,
-      "price": 3000,
+      "price": 2300,
       "date": "05-11-2023",
       "month": "noyabr",
       "pictureURL": ["/public/assets/istanbulHotelPhoto3.png"],
-
       "reviews": [
         {
           "name": "John",
@@ -1180,7 +1195,187 @@
       ]
     },
     {
-      "id": 323,
+      "id": 347,
+      "overview": " Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit nobis cum esse vero eveniet quisquam ratione temporibus cumque praesentium similique distinctio recusandae quas quod, rerum ab asperiores possimus iste assumenda!",
+      "city": "Sevilya",
+      "country": "İspaniya",
+      "type": "Qrup",
+      "position": {
+        "lat": 40.68278,
+        "lng": 46.36056
+      },
+      "isInFavorite": false,
+      "price": 1400,
+      "date": "05-11-2023",
+      "month": "noyabr",
+      "pictureURL": ["/public/assets/istanbulHotelPhoto3.png"],
+      "reviews": [
+        {
+          "name": "John",
+          "text": "It was such a good city to visit. I enjoyed it"
+        },
+        {
+          "name": "Peter",
+          "text": "It was such a good city to visit. I enjoyed it"
+        },
+        {
+          "name": "Ksenia ",
+          "text": "It was such a good city to visit. I enjoyed it"
+        }
+      ]
+    },
+    {
+      "id": 566,
+      "overview": " Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit nobis cum esse vero eveniet quisquam ratione temporibus cumque praesentium similique distinctio recusandae quas quod, rerum ab asperiores possimus iste assumenda!",
+      "city": "Sevilya",
+      "country": "İspaniya",
+      "type": "Müalicəvi",
+      "position": {
+        "lat": 40.68278,
+        "lng": 46.36056
+      },
+      "isInFavorite": false,
+      "price": 800,
+      "date": "05-11-2023",
+      "month": "noyabr",
+      "pictureURL": ["/public/assets/istanbulHotelPhoto3.png"],
+      "reviews": [
+        {
+          "name": "John",
+          "text": "It was such a good city to visit. I enjoyed it"
+        },
+        {
+          "name": "Peter",
+          "text": "It was such a good city to visit. I enjoyed it"
+        },
+        {
+          "name": "Ksenia ",
+          "text": "It was such a good city to visit. I enjoyed it"
+        }
+      ]
+    },
+    {
+      "id": 713,
+      "overview": " Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit nobis cum esse vero eveniet quisquam ratione temporibus cumque praesentium similique distinctio recusandae quas quod, rerum ab asperiores possimus iste assumenda!",
+      "city": "Sevilya",
+      "country": "İspaniya",
+      "type": "Qrup",
+      "position": {
+        "lat": 40.68278,
+        "lng": 46.36056
+      },
+      "isInFavorite": false,
+      "price": 2000,
+      "date": "19-05-2023",
+      "month": "may",
+      "pictureURL": ["/public/assets/istanbulHotelPhoto3.png"],
+      "reviews": [
+        {
+          "name": "John",
+          "text": "It was such a good city to visit. I enjoyed it"
+        },
+        {
+          "name": "Peter",
+          "text": "It was such a good city to visit. I enjoyed it"
+        },
+        {
+          "name": "Ksenia ",
+          "text": "It was such a good city to visit. I enjoyed it"
+        }
+      ]
+    },
+    {
+      "id": 968,
+      "overview": " Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit nobis cum esse vero eveniet quisquam ratione temporibus cumque praesentium similique distinctio recusandae quas quod, rerum ab asperiores possimus iste assumenda!",
+      "city": "Sevilya",
+      "country": "İspaniya",
+      "type": "Müalicəvi",
+      "position": {
+        "lat": 40.68278,
+        "lng": 46.36056
+      },
+      "isInFavorite": false,
+      "price": 2855,
+      "date": "05-11-2023",
+      "month": "noyabr",
+      "pictureURL": ["/public/assets/istanbulHotelPhoto3.png"],
+      "reviews": [
+        {
+          "name": "John",
+          "text": "It was such a good city to visit. I enjoyed it"
+        },
+        {
+          "name": "Peter",
+          "text": "It was such a good city to visit. I enjoyed it"
+        },
+        {
+          "name": "Ksenia ",
+          "text": "It was such a good city to visit. I enjoyed it"
+        }
+      ]
+    },
+    {
+      "id": 977,
+      "overview": " Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit nobis cum esse vero eveniet quisquam ratione temporibus cumque praesentium similique distinctio recusandae quas quod, rerum ab asperiores possimus iste assumenda!",
+      "city": "Sevilya",
+      "country": "İspaniya",
+      "type": "8 Mart",
+      "position": {
+        "lat": 40.68278,
+        "lng": 46.36056
+      },
+      "isInFavorite": false,
+      "price": 2500,
+      "date": "05-11-2023",
+      "month": "noyabr",
+      "pictureURL": ["/public/assets/istanbulHotelPhoto3.png"],
+      "reviews": [
+        {
+          "name": "John",
+          "text": "It was such a good city to visit. I enjoyed it"
+        },
+        {
+          "name": "Peter",
+          "text": "It was such a good city to visit. I enjoyed it"
+        },
+        {
+          "name": "Ksenia ",
+          "text": "It was such a good city to visit. I enjoyed it"
+        }
+      ]
+    },
+    {
+      "id": 458,
+      "overview": " Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit nobis cum esse vero eveniet quisquam ratione temporibus cumque praesentium similique distinctio recusandae quas quod, rerum ab asperiores possimus iste assumenda!",
+      "city": "Sevilya",
+      "country": "İspaniya",
+      "type": "Ramazan",
+      "position": {
+        "lat": 40.68278,
+        "lng": 46.36056
+      },
+      "isInFavorite": false,
+      "price": 1000,
+      "date": "05-11-2023",
+      "month": "noyabr",
+      "pictureURL": ["/public/assets/istanbulHotelPhoto3.png"],
+      "reviews": [
+        {
+          "name": "John",
+          "text": "It was such a good city to visit. I enjoyed it"
+        },
+        {
+          "name": "Peter",
+          "text": "It was such a good city to visit. I enjoyed it"
+        },
+        {
+          "name": "Ksenia ",
+          "text": "It was such a good city to visit. I enjoyed it"
+        }
+      ]
+    },
+    {
+      "id": 298,
       "overview": " Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit nobis cum esse vero eveniet quisquam ratione temporibus cumque praesentium similique distinctio recusandae quas quod, rerum ab asperiores possimus iste assumenda!",
       "city": "Barselona",
       "country": "İspaniya",
@@ -1194,7 +1389,6 @@
       "date": "05-03-2023",
       "month": "mart",
       "pictureURL": ["/public/assets/istanbulHotelPhoto3.png"],
-
       "reviews": [
         {
           "name": "John",
@@ -1211,7 +1405,7 @@
       ]
     },
     {
-      "id": 323,
+      "id": 235,
       "overview": " Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit nobis cum esse vero eveniet quisquam ratione temporibus cumque praesentium similique distinctio recusandae quas quod, rerum ab asperiores possimus iste assumenda!",
       "city": "Milan",
       "country": "İtaliya",
@@ -1225,7 +1419,6 @@
       "date": "05-03-2023",
       "month": "mart",
       "pictureURL": ["/public/assets/istanbulHotelPhoto3.png"],
-
       "reviews": [
         {
           "name": "John",
@@ -1242,7 +1435,7 @@
       ]
     },
     {
-      "id": 323,
+      "id": 361,
       "overview": " Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit nobis cum esse vero eveniet quisquam ratione temporibus cumque praesentium similique distinctio recusandae quas quod, rerum ab asperiores possimus iste assumenda!",
       "city": "Milan",
       "country": "İtaliya",
@@ -1256,7 +1449,6 @@
       "date": "30-03-2023",
       "month": "mart",
       "pictureURL": ["/public/assets/istanbulHotelPhoto3.png"],
-
       "reviews": [
         {
           "name": "John",
@@ -1273,7 +1465,7 @@
       ]
     },
     {
-      "id": 323,
+      "id": 429,
       "overview": " Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit nobis cum esse vero eveniet quisquam ratione temporibus cumque praesentium similique distinctio recusandae quas quod, rerum ab asperiores possimus iste assumenda!",
       "city": "Frankfurt",
       "country": "Almaniya",
@@ -1287,7 +1479,6 @@
       "date": "30-03-2023",
       "month": "mart",
       "pictureURL": ["/public/assets/istanbulHotelPhoto3.png"],
-
       "reviews": [
         {
           "name": "John",
@@ -1304,7 +1495,7 @@
       ]
     },
     {
-      "id": 323,
+      "id": 811,
       "overview": " Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit nobis cum esse vero eveniet quisquam ratione temporibus cumque praesentium similique distinctio recusandae quas quod, rerum ab asperiores possimus iste assumenda!",
       "city": "Frankfurt",
       "country": "Almaniya",
@@ -1318,7 +1509,6 @@
       "date": "30-05-2023",
       "month": "may",
       "pictureURL": ["/public/assets/istanbulHotelPhoto3.png"],
-
       "reviews": [
         {
           "name": "John",
@@ -1335,7 +1525,7 @@
       ]
     },
     {
-      "id": 356,
+      "id": 584,
       "overview": " Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit nobis cum esse vero eveniet quisquam ratione temporibus cumque praesentium similique distinctio recusandae quas quod, rerum ab asperiores possimus iste assumenda!",
       "city": "Ganja",
       "country": "Azerbaijan",
@@ -1349,7 +1539,6 @@
       "date": "05-10-2023",
       "month": "oktyabr",
       "pictureURL": ["/public/assets/istanbulHotelPhoto3.png"],
-
       "reviews": [
         {
           "name": "John",
