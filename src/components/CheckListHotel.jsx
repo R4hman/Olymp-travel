@@ -52,7 +52,7 @@ export default function CheckListHotel({
         bgcolor: "background.paper",
         position: "relative",
         overflow: "auto",
-        maxHeight: 300,
+        maxHeight: 250,
         "& ul": { padding: 0 },
       }}
       dense
