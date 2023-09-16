@@ -3,6 +3,7 @@ import { useSelector } from "react-redux";
 import Navbar from "../components/navbar";
 import Footer from "../components/footer";
 import TourListItem from "../components/TourListItem";
+import { CustomContainer } from "../theme";
 
 const FavoriteTours = () => {
   const favorites = useSelector((store) => store.favorite.favorites);
@@ -15,11 +16,20 @@ const FavoriteTours = () => {
   return (
     <Box>
       <Navbar />
-      <Box>
-        {favorites.map((item) => (
-          <TourListItem key={item.id} item={item} />
-        ))}
-      </Box>
+      <CustomContainer>
+        <Box
+          sx={{
+            display: "flex",
+            alignItems: "center",
+            flexWrap: "wrap",
+            gap: "2rem",
+          }}
+        >
+          {favorites.map((item) => (
+            <TourListItem favorite sx={{}} key={item.id} item={item} />
+          ))}
+        </Box>
+      </CustomContainer>
       <Footer />
     </Box>
   );
