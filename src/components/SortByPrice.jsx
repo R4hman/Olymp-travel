@@ -4,29 +4,24 @@ import MenuItem from "@mui/material/MenuItem";
 import FormControl from "@mui/material/FormControl";
 import Select from "@mui/material/Select";
 
-export default function SortByPrice() {
-  const [age, setAge] = React.useState("");
-
-  const handleChange = (event) => {
-    setAge(event.target.value);
-  };
-
+export default function SortByPrice({ sort, handleSortChange }) {
   return (
     <FormControl sx={{ m: 1, minWidth: 150 }} size="small">
-      <InputLabel id="demo-select-small-label">Seç</InputLabel>
+      <InputLabel id="demo-select-small-label" sx={{ ml: "1.5rem" }}>
+        Seç
+      </InputLabel>
       <Select
         labelId="demo-select-small-label"
         id="demo-select-small"
-        value={age}
-        label="Age"
-        onChange={handleChange}
+        value={sort}
+        label="Sort by price"
+        onChange={handleSortChange}
       >
         {/* <MenuItem value="">
           <em>None</em>
         </MenuItem> */}
-        <MenuItem value={10}>Ten</MenuItem>
-        <MenuItem value={20}>Twenty</MenuItem>
-        <MenuItem value={30}>Thirty</MenuItem>
+        <MenuItem value={"high"}>Yuxarı qiymətə</MenuItem>
+        <MenuItem value={"low"}>Aşağı qiymətə</MenuItem>
       </Select>
     </FormControl>
   );
