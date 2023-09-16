@@ -48,7 +48,7 @@ const FormSelections = ({
         },
       }}
     >
-      {/* {forType !== "tour" && <DateRangePicker />} */}
+      {forType !== "tour" && <DateRangePicker />}
       {showSelectComponent && <SelectComponent list={months} />}
 
       <FormControl sx={{ m: 1, width: 300 }}>
