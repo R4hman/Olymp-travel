@@ -8,12 +8,12 @@ import "react-date-range/dist/styles.css";
 import "react-date-range/dist/theme/default.css";
 import { Box, Input } from "@mui/material";
 import { useDispatch, useSelector } from "react-redux";
-import { setTime } from "../store/slices/tourSlice";
+import { setTime } from "../store/slices/hotelSlice";
 
 const DateRangePicker = () => {
   const dispatch = useDispatch();
 
-  const timeRange = useSelector((store) => store.tour.timeRange);
+  const timeRange = useSelector((store) => store.hotel.timeRange);
 
   // open close
   const [open, setOpen] = useState(false);
