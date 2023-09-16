@@ -1,13 +1,4 @@
-import {
-  Box,
-  Divider,
-  Typography,
-  Button,
-  Slider,
-  Stack,
-  ButtonGroup,
-} from "@mui/material";
-import { useState } from "react";
+import { Box, Divider, Typography, Slider, Stack } from "@mui/material";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import { FlexBetween } from "../theme";
 
