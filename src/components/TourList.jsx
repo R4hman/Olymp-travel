@@ -7,7 +7,16 @@ import { FlexBetween } from "../theme";
 import ReusableButton from "./ReusableButton";
 import SortByPrice from "./SortByPrice";
 
-const TourList = ({ data, isLoading, error, length, handleClearFilter }) => {
+const TourList = ({
+  data,
+  isLoading,
+  error,
+  length,
+  handleClearFilter,
+  handleSortChange,
+  sort,
+}) => {
+  console.log("tours list data", data);
   return (
     <Box sx={{ width: "800px", height: "auto" }}>
       <FlexBetween sx={{ mb: "1rem" }}>
@@ -17,7 +26,7 @@ const TourList = ({ data, isLoading, error, length, handleClearFilter }) => {
         <ReusableButton onClick={handleClearFilter}>
           Filtrləri təmizlə
         </ReusableButton>
-        <SortByPrice />
+        <SortByPrice handleSortChange={handleSortChange} sort={sort} />
       </FlexBetween>
       <Box>
         {isLoading && <Loader />}
