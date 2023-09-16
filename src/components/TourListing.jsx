@@ -48,7 +48,7 @@ const countries = [
     country: "Almaniya",
     cities: [
       "Berlin",
-      "Franfurt",
+      "Frankfurt",
       "Leipzig",
       "Vaşinqton",
       "Massachusetts",
@@ -253,36 +253,30 @@ const TourListing = ({
   isLoading,
   error,
   handleClearFilter,
+  handleSortChange,
+  sort,
+  setNext,
+  next,
 }) => {
   const [postsToShow, setPostsToShow] = useState([]);
-  const [next, setNext] = useState(3);
 
   const theme = useTheme();
-
-  // if (checked.length > 0) {
-  //   cityToShow = countries.filter((country) => {
-  //     return country.country === checked[checked.length - 1];
-  //   })[0]?.cities;
-  // } else if (!cityToShow) {
-  //   cityToShow = cities;
-  // }
 
   const cityToShow = countries.filter((country) => {
     return country.country === checked[checked.length - 1];
   })[0]?.cities;
 
-  // cityToShow.map((c) => console.log("cityToShow: " + c + "b"));
-
-  // console.log("checked", cityToShow);
-  // console.log("country  ", cityToShow);
-  // console.log("checked", cityToShow);
-
   const loopWithSlice = (start, end) => {
+    console.log("start", start);
+    console.log("end", end);
     const slicedPosts = data.slice(start, end);
+    console.log("sliced posts", slicedPosts);
     // arrayForHoldingPosts = [...arrayForHoldingPosts, ...slicedPosts];
     // setPostsToShow(arrayForHoldingPosts);
     setPostsToShow(slicedPosts);
   };
+
+  console.log("next", next);
 
   // useEffect(() => {
   //   loopWithSlice(0, postsPerPage);
@@ -405,7 +399,6 @@ const TourListing = ({
                           "&.MuiListItem-root": {
                             padding: "0",
                             width: "100%",
-                            // backgroundColor: "red",
                           },
                         }}
                       >
@@ -433,22 +426,6 @@ const TourListing = ({
               </Grid>
             </Grid>
           </Stack>
-
-          {/* <Stack>
-            <FlexBetween sx={{ padding: "0.5rem  0" }}>
-              <Typography variant="subtitle1">Ay</Typography>
-              <KeyboardArrowDown />
-            </FlexBetween>
-            <CheckListHotel
-              checked={checked}
-              setChecked={setChecked}
-              data={months}
-              sx={{
-                display: "flex",
-                justifyContent: "flex-start",
-              }}
-            />
-          </Stack> */}
         </Grid>
 
         <Grid
@@ -476,6 +453,8 @@ const TourListing = ({
               isLoading={isLoading}
               error={error}
               handleClearFilter={handleClearFilter}
+              handleSortChange={handleSortChange}
+              sort={sort}
             />
             {postsToShow.length > 0 && !data.length && (
               <ReusableButton
@@ -488,7 +467,7 @@ const TourListing = ({
                 Show more tours
               </ReusableButton>
             )}
-            {data.length > 0 && (
+            {data.length > 3 && next < data.length && (
               <ReusableButton
                 onClick={handleShowMorePosts}
                 bgColor="black"

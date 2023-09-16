@@ -24,7 +24,7 @@ import {
 } from "../store/slices/favoritesSlice";
 import { toast } from "react-hot-toast";
 
-const TourListItem = ({ item }) => {
+const TourListItem = ({ item, favorite }) => {
   // eger isWishlist varsa demeli tourListItem wishlist sehifesindedir ve click ile wishliste salinib evvelceden
   // const [favoriteClicked, setFavoriteClicked] = useState(false);
   const dispatch = useDispatch();
@@ -56,7 +56,9 @@ const TourListItem = ({ item }) => {
     // <Link to={`${item.id}`}>
     <Card
       sx={{
+        width: favorite ? "300px" : null,
         display: "flex",
+        flexDirection: favorite ? "column" : "row",
         borderRadius: "12px",
         mb: "1.5rem",
         "& :hover": {
@@ -116,13 +118,15 @@ const TourListItem = ({ item }) => {
           </Typography> */}
           {item.rating && <RatingComponent>{item.rating}</RatingComponent>}
         </CardContent>
-        <Divider
-          sx={{
-            backgroundColor: theme.palette.divider,
-            borderBottomWidth: "0.5px",
-            marginTop: "1rem",
-          }}
-        />
+        {!favorite && (
+          <Divider
+            sx={{
+              backgroundColor: theme.palette.divider,
+              borderBottomWidth: "0.5px",
+              marginTop: "1rem",
+            }}
+          />
+        )}
 
         <Stack direction="row" spacing={2}>
           {/* <IconButton
@@ -155,7 +159,7 @@ const TourListItem = ({ item }) => {
               textAlign: "left",
               color: "black",
               textTransform: "capitalize",
-              width: "100%",
+              width: favorite ? "50%" : "100%",
 
               "&:hover": { backgroundColor: `${theme.palette.primary.main}` },
             }}
