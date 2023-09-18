@@ -18,8 +18,24 @@ const TourList = ({
 }) => {
   console.log("tours list data", data);
   return (
-    <Box sx={{ width: "800px", height: "auto" }}>
-      <FlexBetween sx={{ mb: "1rem" }}>
+    <Box
+      sx={{
+        width: {
+          xs: "400px",
+          md: "800px",
+        },
+        height: "auto",
+      }}
+    >
+      <FlexBetween
+        sx={{
+          mb: "1rem",
+          flexDirection: {
+            xs: "column",
+            md: "row",
+          },
+        }}
+      >
         <Typography variant="subtitle1">
           Axtarışa uyğun {length} tur tapıldı
         </Typography>
