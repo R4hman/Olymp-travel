@@ -8,6 +8,7 @@ import {
   IconButton,
   Stack,
   Typography,
+  useMediaQuery,
 } from "@mui/material";
 import { FlexBetween, RatingComponent, theme } from "../theme";
 import FavoriteIcon from "@mui/icons-material/Favorite";
@@ -29,6 +30,7 @@ const TourListItem = ({ item, favorite }) => {
   // const [favoriteClicked, setFavoriteClicked] = useState(false);
   const dispatch = useDispatch();
   const favorites = useSelector((store) => store.favorite.favorites);
+  const isTablet = useMediaQuery("(max-width: 900px)");
 
   // console.log("favoriteClicked", favoriteClicked);
 
@@ -56,9 +58,9 @@ const TourListItem = ({ item, favorite }) => {
     // <Link to={`${item.id}`}>
     <Card
       sx={{
-        width: favorite ? "300px" : null,
+        width: favorite || isTablet ? "300px" : null,
         display: "flex",
-        flexDirection: favorite ? "column" : "row",
+        flexDirection: favorite || isTablet ? "column" : "row",
         borderRadius: "12px",
         mb: "1.5rem",
         "& :hover": {
