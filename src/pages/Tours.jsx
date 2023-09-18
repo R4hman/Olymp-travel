@@ -36,7 +36,7 @@ const Tours = ({ months, typeOfTours }) => {
   const dispatch = useDispatch();
   const tourType = useSelector((store) => store.tour.type);
   const [searchParams, setSearchParams] = useSearchParams();
-  const { tours: queryTours } = useTours(
+  const { tours: queryTours, isToursLoading: isFirstLoading } = useTours(
     "http://localhost:3000/tours" + location.search
   );
 
@@ -44,7 +44,7 @@ const Tours = ({ months, typeOfTours }) => {
 
   console.log("react qr tours", firstData);
 
-  if (isLoading) return <Loader />;
+  if (isLoading || isFirstLoading) return <Loader />;
 
   // const [locationChanged, setLocationChanged] = useState(false);
   // const [time, setTime] = useState(null);
@@ -204,17 +204,31 @@ const Tours = ({ months, typeOfTours }) => {
           justifyContent: "center",
         }}
       >
-        <FormSelections
-          months={months}
-          forType="tour"
-          typeOfTours={typeOfTours}
-        />
-        <ReusableButton
-          onClick={handleSearchList}
-          bgColor={theme.palette.primary.main}
+        <Box
+          sx={{
+            display: {
+              xs: "flex",
+            },
+            alignItems: "center",
+            justifyContent: "center",
+            flexDirection: {
+              xs: "column",
+              sm: "row",
+            },
+          }}
         >
-          <SearchIcon />
-        </ReusableButton>
+          <FormSelections
+            months={months}
+            forType="tour"
+            typeOfTours={typeOfTours}
+          />
+          <ReusableButton
+            onClick={handleSearchList}
+            bgColor={theme.palette.primary.main}
+          >
+            <SearchIcon />
+          </ReusableButton>
+        </Box>
       </Box>
       <TourListing
         months={months}
