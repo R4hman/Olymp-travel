@@ -9,6 +9,7 @@ import {
   ListItemText,
   ListItem,
   List,
+  useMediaQuery,
 } from "@mui/material";
 import Filters from "./Filters";
 import CheckListHotel from "./CheckListHotel";
@@ -261,6 +262,7 @@ const TourListing = ({
   const [postsToShow, setPostsToShow] = useState([]);
 
   const theme = useTheme();
+  const isMedium = useMediaQuery("(max-width: 1350px");
 
   const cityToShow = countries.filter((country) => {
     return country.country === checked[checked.length - 1];
@@ -309,9 +311,36 @@ const TourListing = ({
 
   return (
     <CustomContainer>
-      <Grid container columns={12} spacing={2}>
-        <Grid item xs={3}>
-          <Filters priceValue={priceValue} setPriceValue={setPriceValue} />
+      <Grid
+        direction={isMedium ? "column" : "row"}
+        justifyContent="center"
+        // alignItems="center"
+        container
+        columns={12}
+        spacing={2}
+      >
+        <Grid
+          // alignItems="center"
+          justifyContent="center"
+          item
+          width="100%"
+          // sx={{
+          //   display: isMedium ? "flex" : "auto",
+          //   gap: "3rem",
+          // }}
+          xs={12}
+          sm={6}
+          md={3}
+        >
+          <Filters
+            priceValue={priceValue}
+            sx={{
+              width: {
+                xs: "50%",
+              },
+            }}
+            setPriceValue={setPriceValue}
+          />
           <Stack sx={{ pt: "0.5rem " }}>
             <FlexBetween sx={{ pb: "0.5rem 0", mb: "1rem" }}>
               <Typography variant="subtitle1">Ölkə</Typography>
@@ -429,8 +458,11 @@ const TourListing = ({
         </Grid>
 
         <Grid
+          width="100%"
           item
-          xs={9}
+          xs={12}
+          sm={6}
+          md={9}
           sx={{
             display: "flex",
             justifyContent: "flex-end",
